@@ -1,0 +1,34 @@
+{
+  "name": "weighted_cross_entropy",
+  "formula": "w_c = n_c^(-beta) from the training split; each batch uses mean((w_y / mean(w_y)) * cross_entropy)",
+  "beta": 0.3,
+  "class_order": [
+    "MEL",
+    "NV",
+    "BCC",
+    "AKIEC",
+    "BKL",
+    "DF",
+    "VASC"
+  ],
+  "class_counts": [
+    1113,
+    6705,
+    514,
+    327,
+    1099,
+    115,
+    142
+  ],
+  "class_weights": [
+    0.12191340207066198,
+    0.07113451344994953,
+    0.1537131647844854,
+    0.17604985601085882,
+    0.12237725071849212,
+    0.24087440112253738,
+    0.22610673390494793
+  ],
+  "weight_source": "training split true labels",
+  "alpha": null
+}

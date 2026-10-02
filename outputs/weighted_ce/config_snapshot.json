@@ -1,0 +1,60 @@
+{
+  "seed": 42,
+  "run_name": "weighted_ce",
+  "variant": "vitb14",
+  "weights": "/home/lheax/data/elec5690_isic2018/weights/dinov2_vitb14_pretrain.pth",
+  "image_size": 224,
+  "data_root": "/home/lheax/data/ISIC2018_Task3",
+  "train_image_dir": "/home/lheax/data/ISIC2018_Task3/ISIC2018_Task3_Training_Input",
+  "train_csv": "/home/lheax/data/ISIC2018_Task3/ISIC2018_Task3_Training_GroundTruth/ISIC2018_Task3_Training_GroundTruth.csv",
+  "val_image_dir": "/home/lheax/data/ISIC2018_Task3/ISIC2018_Task3_Validation_Input",
+  "val_csv": "/home/lheax/data/ISIC2018_Task3/ISIC2018_Task3_Validation_GroundTruth/ISIC2018_Task3_Validation_GroundTruth.csv",
+  "test_image_dir": "/home/lheax/data/ISIC2018_Task3/ISIC2018_Task3_Test_Input",
+  "test_csv": "/home/lheax/data/ISIC2018_Task3/ISIC2018_Task3_Test_GroundTruth/ISIC2018_Task3_Test_GroundTruth.csv",
+  "epochs": 20,
+  "batch_size": 256,
+  "num_workers": 8,
+  "lr_backbone": 1e-05,
+  "lr_head": 0.001,
+  "weight_decay": 0.05,
+  "warmup_epochs": 1,
+  "amp": true,
+  "loss": {
+    "name": "weighted_cross_entropy",
+    "formula": "w_c = n_c^(-beta) from the training split; each batch uses mean((w_y / mean(w_y)) * cross_entropy)",
+    "beta": 0.3,
+    "class_order": [
+      "MEL",
+      "NV",
+      "BCC",
+      "AKIEC",
+      "BKL",
+      "DF",
+      "VASC"
+    ],
+    "class_counts": [
+      1113,
+      6705,
+      514,
+      327,
+      1099,
+      115,
+      142
+    ],
+    "class_weights": [
+      0.12191340207066198,
+      0.07113451344994953,
+      0.1537131647844854,
+      0.17604985601085882,
+      0.12237725071849212,
+      0.24087440112253738,
+      0.22610673390494793
+    ],
+    "weight_source": "training split true labels",
+    "alpha": null
+  },
+  "output_dir": "/home/lheax/data/elec5690_isic2018/outputs/weighted_ce",
+  "resume": "",
+  "device": "cuda",
+  "_config_path": "/home/lheax/data/elec5690_isic2018/configs/weighted_ce.yaml"
+}

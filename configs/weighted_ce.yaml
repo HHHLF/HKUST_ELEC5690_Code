@@ -1,0 +1,37 @@
+# Strategy A. Same data, model, seed, augmentation, optimizer, and cosine schedule
+# as the finished Problem 1(a) run in runs/baseline (10 epochs, batch size 64).
+# configs/baseline.yaml currently lists epochs: 50 and batch_size: 256; that file
+# was edited after runs/baseline finished, so these experiments do not copy those two values.
+# runs/baseline_e30 used 30 epochs and batch size 256 and is a different protocol.
+
+seed: 42
+run_name: weighted_ce
+variant: vitb14
+weights: weights/dinov2_vitb14_pretrain.pth
+image_size: 224
+
+data_root: /home/lheax/data/ISIC2018_Task3
+train_image_dir: /home/lheax/data/ISIC2018_Task3/ISIC2018_Task3_Training_Input
+train_csv: /home/lheax/data/ISIC2018_Task3/ISIC2018_Task3_Training_GroundTruth/ISIC2018_Task3_Training_GroundTruth.csv
+val_image_dir: /home/lheax/data/ISIC2018_Task3/ISIC2018_Task3_Validation_Input
+val_csv: /home/lheax/data/ISIC2018_Task3/ISIC2018_Task3_Validation_GroundTruth/ISIC2018_Task3_Validation_GroundTruth.csv
+test_image_dir: /home/lheax/data/ISIC2018_Task3/ISIC2018_Task3_Test_Input
+test_csv: /home/lheax/data/ISIC2018_Task3/ISIC2018_Task3_Test_GroundTruth/ISIC2018_Task3_Test_GroundTruth.csv
+
+epochs: 20
+batch_size: 256
+num_workers: 8
+lr_backbone: 1.0e-5
+lr_head: 1.0e-3
+weight_decay: 0.05
+warmup_epochs: 1
+amp: true
+
+loss:
+  name: weighted_cross_entropy
+  # 1 is plain inverse frequency. 0.5 uses 1/sqrt(n_c), a milder rare-class boost.
+  beta: 0.3
+
+output_dir: outputs/weighted_ce
+resume: ""
+device: cuda

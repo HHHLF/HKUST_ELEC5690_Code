@@ -1,0 +1,29 @@
+{
+  "test": {
+    "split": "test",
+    "csv": "/home/lheax/data/ISIC2018_Task3/ISIC2018_Task3_Test_GroundTruth/ISIC2018_Task3_Test_GroundTruth.csv",
+    "image_dir": "/home/lheax/data/ISIC2018_Task3/ISIC2018_Task3_Test_Input",
+    "id_column": "image",
+    "label_mode": "one-hot:MEL,NV,BCC,AKIEC,BKL,DF,VASC",
+    "num_csv_rows": 1512,
+    "num_samples": 1512,
+    "expected_samples": 1512,
+    "count_matches_assignment": true,
+    "class_counts": {
+      "MEL": 171,
+      "NV": 909,
+      "BCC": 93,
+      "AKIEC": 43,
+      "BKL": 217,
+      "DF": 44,
+      "VASC": 35
+    },
+    "ignored_non_images": [
+      "ATTRIBUTION.txt",
+      "LICENSE.txt"
+    ],
+    "extra_images_without_labels": [],
+    "missing_images": []
+  },
+  "cross_split_overlap": {}
+}

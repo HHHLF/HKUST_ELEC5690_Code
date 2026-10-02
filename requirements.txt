@@ -1,0 +1,10 @@
+# Reuse the server conda env `prism` when possible. Do not reinstall torch from pip
+# into that env. These pins document the libraries the code imports.
+torch>=2.2
+torchvision>=0.17
+numpy>=1.24
+pandas>=2.0
+scikit-learn>=1.3
+matplotlib>=3.7
+pillow>=10.0
+pyyaml>=6.0

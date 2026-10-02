@@ -1,0 +1,42 @@
+{
+  "seed": 42,
+  "run_name": "focal",
+  "variant": "vitb14",
+  "weights": "/home/lheax/data/elec5690_isic2018/weights/dinov2_vitb14_pretrain.pth",
+  "image_size": 224,
+  "data_root": "/home/lheax/data/ISIC2018_Task3",
+  "train_image_dir": "/home/lheax/data/ISIC2018_Task3/ISIC2018_Task3_Training_Input",
+  "train_csv": "/home/lheax/data/ISIC2018_Task3/ISIC2018_Task3_Training_GroundTruth/ISIC2018_Task3_Training_GroundTruth.csv",
+  "val_image_dir": "/home/lheax/data/ISIC2018_Task3/ISIC2018_Task3_Validation_Input",
+  "val_csv": "/home/lheax/data/ISIC2018_Task3/ISIC2018_Task3_Validation_GroundTruth/ISIC2018_Task3_Validation_GroundTruth.csv",
+  "test_image_dir": "/home/lheax/data/ISIC2018_Task3/ISIC2018_Task3_Test_Input",
+  "test_csv": "/home/lheax/data/ISIC2018_Task3/ISIC2018_Task3_Test_GroundTruth/ISIC2018_Task3_Test_GroundTruth.csv",
+  "epochs": 20,
+  "batch_size": 256,
+  "num_workers": 8,
+  "lr_backbone": 1e-05,
+  "lr_head": 0.001,
+  "weight_decay": 0.05,
+  "warmup_epochs": 1,
+  "amp": true,
+  "loss": {
+    "name": "focal",
+    "formula": "mean over samples of -(1 - p_t)^gamma * log(p_t); p_t = exp(log_softmax(logits)[y]); alpha is not the inverse-frequency weight",
+    "gamma": 1.0,
+    "alpha": null,
+    "class_order": [
+      "MEL",
+      "NV",
+      "BCC",
+      "AKIEC",
+      "BKL",
+      "DF",
+      "VASC"
+    ],
+    "class_weights": null
+  },
+  "output_dir": "/home/lheax/data/elec5690_isic2018/outputs/focal",
+  "resume": "",
+  "device": "cuda",
+  "_config_path": "/home/lheax/data/elec5690_isic2018/configs/focal.yaml"
+}

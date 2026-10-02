@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# DINOv2 checkpoints exceed GitHub's file size limit.
+weights/*.pth
+weights/*.pt
+
+# Training checkpoints. Metrics, logs, and figures stay in the repo.
+**/*.pt
+
+# Microsoft core fonts. Place Times New Roman files here locally; do not publish them.
+fonts/*.ttf
+fonts/*.TTF
+fonts/*.otf

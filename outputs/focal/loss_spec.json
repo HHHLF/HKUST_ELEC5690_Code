@@ -1,0 +1,16 @@
+{
+  "name": "focal",
+  "formula": "mean over samples of -(1 - p_t)^gamma * log(p_t); p_t = exp(log_softmax(logits)[y]); alpha is not the inverse-frequency weight",
+  "gamma": 1.0,
+  "alpha": null,
+  "class_order": [
+    "MEL",
+    "NV",
+    "BCC",
+    "AKIEC",
+    "BKL",
+    "DF",
+    "VASC"
+  ],
+  "class_weights": null
+}

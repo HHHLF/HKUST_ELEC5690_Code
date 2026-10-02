@@ -1,0 +1,47 @@
+Log file: /home/lheax/data/elec5690_isic2018/outputs/weighted_ce_train.log
+=== ISIC split audit ===
+train: samples=10015 (OK) id_column=image labels=one-hot:MEL,NV,BCC,AKIEC,BKL,DF,VASC
+  class counts: {"MEL": 1113, "NV": 6705, "BCC": 514, "AKIEC": 327, "BKL": 1099, "DF": 115, "VASC": 142}
+  ignored non-image files: ['ATTRIBUTION.txt', 'LICENSE.txt']
+val: samples=193 (OK) id_column=image labels=one-hot:MEL,NV,BCC,AKIEC,BKL,DF,VASC
+  class counts: {"MEL": 21, "NV": 123, "BCC": 15, "AKIEC": 8, "BKL": 22, "DF": 1, "VASC": 3}
+  ignored non-image files: ['ATTRIBUTION.txt', 'LICENSE.txt']
+overlap train&val: none
+Model selection: highest validation accuracy. Validation macro-F1 is logged only.
+The test split is not loaded during training.
+Inverse frequency weights: raw=[0.12191340207066198, 0.07113451344994953, 0.1537131647844854, 0.17604985601085882, 0.12237725071849212, 0.24087440112253738, 0.22610673390494793]
+loss.name=weighted_cross_entropy
+formula: w_c = n_c^(-beta) from the training split; each batch uses mean((w_y / mean(w_y)) * cross_entropy)
+beta=0.3
+class_order=MEL,NV,BCC,AKIEC,BKL,DF,VASC
+class_counts=1113,6705,514,327,1099,115,142
+class_weights=0.121913,0.071135,0.153713,0.176050,0.122377,0.240874,0.226107
+Initializing backbone from pretrained weights only: /home/lheax/data/elec5690_isic2018/weights/dinov2_vitb14_pretrain.pth
+epoch 1/20 train_loss=1.1905 train_acc=0.6564 val_loss=1.2136 val_acc=0.6010 val_macro_f1=0.5403 lr_head=1.00e-03
+  saved best.pt by validation accuracy=0.6010 (val macro-F1=0.5403)
+epoch 2/20 train_loss=0.6796 train_acc=0.7875 val_loss=0.4918 val_acc=0.8446 val_macro_f1=0.6566 lr_head=1.00e-03
+  saved best.pt by validation accuracy=0.8446 (val macro-F1=0.6566)
+epoch 3/20 train_loss=0.4183 train_acc=0.8680 val_loss=0.4597 val_acc=0.8808 val_macro_f1=0.6763 lr_head=9.93e-04
+  saved best.pt by validation accuracy=0.8808 (val macro-F1=0.6763)
+epoch 4/20 train_loss=0.2792 train_acc=0.9102 val_loss=0.6303 val_acc=0.8290 val_macro_f1=0.6121 lr_head=9.73e-04
+epoch 5/20 train_loss=0.1989 train_acc=0.9336 val_loss=0.5633 val_acc=0.8705 val_macro_f1=0.8057 lr_head=9.40e-04
+epoch 6/20 train_loss=0.1230 train_acc=0.9606 val_loss=0.6783 val_acc=0.8135 val_macro_f1=0.7771 lr_head=8.95e-04
+epoch 7/20 train_loss=0.0821 train_acc=0.9738 val_loss=0.5536 val_acc=0.8497 val_macro_f1=0.7726 lr_head=8.39e-04
+epoch 8/20 train_loss=0.0505 train_acc=0.9856 val_loss=0.5103 val_acc=0.8601 val_macro_f1=0.6628 lr_head=7.73e-04
+epoch 9/20 train_loss=0.0190 train_acc=0.9964 val_loss=0.5579 val_acc=0.8808 val_macro_f1=0.8006 lr_head=7.01e-04
+  saved best.pt by validation accuracy=0.8808 (val macro-F1=0.8006)
+epoch 10/20 train_loss=0.0133 train_acc=0.9974 val_loss=0.6264 val_acc=0.8497 val_macro_f1=0.6605 lr_head=6.23e-04
+epoch 11/20 train_loss=0.0172 train_acc=0.9973 val_loss=0.6116 val_acc=0.8860 val_macro_f1=0.8381 lr_head=5.41e-04
+  saved best.pt by validation accuracy=0.8860 (val macro-F1=0.8381)
+epoch 12/20 train_loss=0.0057 train_acc=0.9996 val_loss=0.6160 val_acc=0.8705 val_macro_f1=0.7988 lr_head=4.59e-04
+epoch 13/20 train_loss=0.0036 train_acc=0.9999 val_loss=0.6191 val_acc=0.8860 val_macro_f1=0.8162 lr_head=3.77e-04
+epoch 14/20 train_loss=0.0028 train_acc=1.0000 val_loss=0.6209 val_acc=0.8808 val_macro_f1=0.8176 lr_head=2.99e-04
+epoch 15/20 train_loss=0.0020 train_acc=0.9999 val_loss=0.6050 val_acc=0.8912 val_macro_f1=0.8262 lr_head=2.27e-04
+  saved best.pt by validation accuracy=0.8912 (val macro-F1=0.8262)
+epoch 16/20 train_loss=0.0019 train_acc=1.0000 val_loss=0.6075 val_acc=0.8964 val_macro_f1=0.8313 lr_head=1.61e-04
+  saved best.pt by validation accuracy=0.8964 (val macro-F1=0.8313)
+epoch 17/20 train_loss=0.0018 train_acc=0.9999 val_loss=0.6092 val_acc=0.8860 val_macro_f1=0.8334 lr_head=1.05e-04
+epoch 18/20 train_loss=0.0016 train_acc=1.0000 val_loss=0.6135 val_acc=0.8808 val_macro_f1=0.8276 lr_head=6.03e-05
+epoch 19/20 train_loss=0.0015 train_acc=1.0000 val_loss=0.6164 val_acc=0.8808 val_macro_f1=0.8244 lr_head=2.71e-05
+epoch 20/20 train_loss=0.0015 train_acc=1.0000 val_loss=0.6173 val_acc=0.8808 val_macro_f1=0.8244 lr_head=6.82e-06
+Training finished. Best epoch=16, val accuracy=0.8964, val macro-F1=0.8313. Run evaluate.py on the test set after this selection. Test metrics were not computed.

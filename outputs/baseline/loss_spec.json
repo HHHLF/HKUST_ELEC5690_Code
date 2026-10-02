@@ -1,0 +1,15 @@
+{
+  "name": "cross_entropy",
+  "formula": "mean CrossEntropyLoss on logits; no class weights",
+  "class_order": [
+    "MEL",
+    "NV",
+    "BCC",
+    "AKIEC",
+    "BKL",
+    "DF",
+    "VASC"
+  ],
+  "class_weights": null,
+  "alpha": null
+}

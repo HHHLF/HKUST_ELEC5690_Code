@@ -1,0 +1,60 @@
+{
+  "train": {
+    "split": "train",
+    "csv": "/home/lheax/data/ISIC2018_Task3/ISIC2018_Task3_Training_GroundTruth/ISIC2018_Task3_Training_GroundTruth.csv",
+    "image_dir": "/home/lheax/data/ISIC2018_Task3/ISIC2018_Task3_Training_Input",
+    "id_column": "image",
+    "label_mode": "one-hot:MEL,NV,BCC,AKIEC,BKL,DF,VASC",
+    "num_csv_rows": 10015,
+    "num_samples": 10015,
+    "expected_samples": 10015,
+    "count_matches_assignment": true,
+    "class_counts": {
+      "MEL": 1113,
+      "NV": 6705,
+      "BCC": 514,
+      "AKIEC": 327,
+      "BKL": 1099,
+      "DF": 115,
+      "VASC": 142
+    },
+    "ignored_non_images": [
+      "ATTRIBUTION.txt",
+      "LICENSE.txt"
+    ],
+    "extra_images_without_labels": [],
+    "missing_images": []
+  },
+  "val": {
+    "split": "val",
+    "csv": "/home/lheax/data/ISIC2018_Task3/ISIC2018_Task3_Validation_GroundTruth/ISIC2018_Task3_Validation_GroundTruth.csv",
+    "image_dir": "/home/lheax/data/ISIC2018_Task3/ISIC2018_Task3_Validation_Input",
+    "id_column": "image",
+    "label_mode": "one-hot:MEL,NV,BCC,AKIEC,BKL,DF,VASC",
+    "num_csv_rows": 193,
+    "num_samples": 193,
+    "expected_samples": 193,
+    "count_matches_assignment": true,
+    "class_counts": {
+      "MEL": 21,
+      "NV": 123,
+      "BCC": 15,
+      "AKIEC": 8,
+      "BKL": 22,
+      "DF": 1,
+      "VASC": 3
+    },
+    "ignored_non_images": [
+      "ATTRIBUTION.txt",
+      "LICENSE.txt"
+    ],
+    "extra_images_without_labels": [],
+    "missing_images": []
+  },
+  "cross_split_overlap": {
+    "train&val": {
+      "count": 0,
+      "examples": []
+    }
+  }
+}

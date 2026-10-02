@@ -1,0 +1,7 @@
+Log file: /home/lheax/data/elec5690_isic2018/outputs/focal_eval.log
+=== ISIC split audit ===
+test: samples=1512 (OK) id_column=image labels=one-hot:MEL,NV,BCC,AKIEC,BKL,DF,VASC
+  class counts: {"MEL": 171, "NV": 909, "BCC": 93, "AKIEC": 43, "BKL": 217, "DF": 44, "VASC": 35}
+  ignored non-image files: ['ATTRIBUTION.txt', 'LICENSE.txt']
+Test samples=1512 accuracy=0.8479 macro_f1=0.7500 balanced_accuracy=0.7250622484979583 macro_ovr_auroc=0.9690291507617138
+Wrote /home/lheax/data/elec5690_isic2018/outputs/focal/test
