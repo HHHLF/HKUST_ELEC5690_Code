@@ -1,0 +1,23 @@
+# Problem 2(b) reads the finished Problem 2(a) run. It does not train or edit those outputs.
+run_dir: outputs/segmentation3d
+history_csv: outputs/segmentation3d/history.csv
+metrics_csv: outputs/segmentation3d/test/per_case_metrics.csv
+summary_json: outputs/segmentation3d/test/summary.json
+split_json: outputs/segmentation3d/split.json
+predictions_dir: outputs/segmentation3d/test/predictions
+output_dir: outputs/segmentation3d/problem2b
+
+# Four test case ids. Leave empty to select from the saved per-case metrics.
+case_ids: []
+# Null selects one Z slice per case. A list of four integers follows case_ids order.
+# A mapping {case_id: index} overrides only the listed cases.
+slice_indices: null
+slice_axis: Z
+gt_area_min_fraction_of_max: 0.2
+dpi: 300
+
+# Same color and opacity for the ground-truth and prediction overlays.
+foreground_rgb: [0.90, 0.16, 0.12]
+foreground_alpha: 0.45
+# Nonzero MRI percentiles on the displayed slice. Shared by the three columns.
+mri_window_percentiles: [1.0, 99.0]

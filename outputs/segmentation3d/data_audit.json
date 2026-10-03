@@ -1,0 +1,3731 @@
+{
+  "dataset_root": "/home/lheax/data/atriaseg2018",
+  "h5_file_count": 0,
+  "h5_note": "A recursive search found no .h5 or .hdf5 volumes. The local release is NRRD (lgemri.nrrd image, laendo.nrrd cavity label). lawall.nrrd is the wall and is not the binary cavity target.",
+  "official_split": {
+    "train_dirname": "Training Set",
+    "test_dirname": "Testing Set"
+  },
+  "axis_order": {
+    "nrrd_sizes": "X Y Z, X fastest on disk",
+    "array_and_model_axes": "axis 0 = X = D, axis 1 = Y = H, axis 2 = Z = W",
+    "model_input": "[B, 1, D, H, W] = [B, 1, X, Y, Z]",
+    "prediction_restore": "predictions stay in (X, Y, Z); no axis transpose is applied at save time"
+  },
+  "patch_size_dhw": [
+    112,
+    112,
+    80
+  ],
+  "patch_axis_order": "patch_size is [D, H, W] = [X, Y, Z]",
+  "normalization": "per-case z-score of nonzero raw voxels; all-zero or zero-variance nonzero region -> zeros",
+  "resample": "none; geometry is the original voxel grid",
+  "distance_unit": "voxel",
+  "spacing_note": "Every inspected header has space directions (1,0,0) (0,1,0) (0,0,1) and no space units. ASD and HD95 are reported in voxels. The challenge paper's 0.625 mm figure is not encoded in this copy and is not applied.",
+  "shape_counts": {
+    "[576, 576, 88]": 69,
+    "[640, 640, 88]": 85
+  },
+  "spacing_counts": {
+    "[1.0, 1.0, 1.0]": 154
+  },
+  "n_cases_loaded_for_audit": 154,
+  "cases": [
+    {
+      "case_id": "0RZDK210BSMWAA6467LU",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        576,
+        576,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 254,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 252364
+    },
+    {
+      "case_id": "1D7CUD1955YZPGK8XHJX",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 202317
+    },
+    {
+      "case_id": "1GU15S0GJ6PFNARO469W",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 143877
+    },
+    {
+      "case_id": "23X6SY44VT9KFHR7S7OC",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        576,
+        576,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 254,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 221849
+    },
+    {
+      "case_id": "2XL5HSFSE93RMOJDRGR4",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        576,
+        576,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 254,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 198484
+    },
+    {
+      "case_id": "38CWS74285MFGZZXR09Z",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        576,
+        576,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 169004
+    },
+    {
+      "case_id": "3C2QTUNI0852XV7ZH4Q1",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        576,
+        576,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 254,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 169831
+    },
+    {
+      "case_id": "3DA0T2V6JJ2NLUAV6FWM",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        576,
+        576,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 291217
+    },
+    {
+      "case_id": "45C45I6IXAFGNRO067W9",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 179469
+    },
+    {
+      "case_id": "4EPVTT1HPA8U60CDUKXE",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 516884
+    },
+    {
+      "case_id": "57SGAJMLCTCH92QUA0EE",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 137205
+    },
+    {
+      "case_id": "5BHTH9RHH3PQT913I59W",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        576,
+        576,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 145330
+    },
+    {
+      "case_id": "5FKQL4K14KCB72Y8YMC2",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        576,
+        576,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 254,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 190858
+    },
+    {
+      "case_id": "5HH0WPWIY06DLAFOBQ4M",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 130198
+    },
+    {
+      "case_id": "5UB5KFD2PK38Z4LS6W80",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        576,
+        576,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 277359
+    },
+    {
+      "case_id": "6799D6LEBH3NSRV1KH27",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        576,
+        576,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 254,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 202466
+    },
+    {
+      "case_id": "78NJ5YFQF72BGC8RO51C",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        576,
+        576,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 254,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 140963
+    },
+    {
+      "case_id": "8GYK8A9MBRC9TV0FVSRA",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 254,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 249203
+    },
+    {
+      "case_id": "8M99G0JLAXG9GLPV0O8G",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        576,
+        576,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 85077
+    },
+    {
+      "case_id": "8RE90C8H5DKF4V6HO8UU",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 220287
+    },
+    {
+      "case_id": "8ZG2TRZ81MAWHZPN9KKG",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        576,
+        576,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 167109
+    },
+    {
+      "case_id": "9DCM2IB45SK6YKQNYUQY",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        576,
+        576,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 378647
+    },
+    {
+      "case_id": "9DHWWP5Y66VDMPXISZ13",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 208467
+    },
+    {
+      "case_id": "9DQYTIU00I4JC0OEOKQQ",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 216338
+    },
+    {
+      "case_id": "A5RNNK0A891WUSC2V624",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        576,
+        576,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 200978
+    },
+    {
+      "case_id": "BNK95S2SJXEGSW7VAKYU",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        576,
+        576,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 243059
+    },
+    {
+      "case_id": "BXJWOUYP2J3EN4U92517",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        576,
+        576,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 348364
+    },
+    {
+      "case_id": "BYSRSI3H4YTWKMM3MADP",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        576,
+        576,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 254,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 176273
+    },
+    {
+      "case_id": "BZUFJX66T0W6ZPVTL9DU",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 134441
+    },
+    {
+      "case_id": "CB5P5W7X310NIIVU7UZV",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        576,
+        576,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 179284
+    },
+    {
+      "case_id": "CCGAKN4EDT72KC8TTJ76",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        576,
+        576,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 164677
+    },
+    {
+      "case_id": "CLXFYOBQDCVXQ9P7YC07",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        576,
+        576,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 254,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 267326
+    },
+    {
+      "case_id": "CMPXO4J23G58J53Q98SZ",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        576,
+        576,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 252364
+    },
+    {
+      "case_id": "CZPMV6KWZ4I7IJJP9FOK",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 337658
+    },
+    {
+      "case_id": "DYXSCIWHLSUOZIDDSZ40",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 236256
+    },
+    {
+      "case_id": "E2ZMO66WGS74UKXTZPPQ",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 387922
+    },
+    {
+      "case_id": "EJ5V7SPR4961JWD6SS8V",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 540939
+    },
+    {
+      "case_id": "FGM5NIWN3URY4HF4WNUW",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 226997
+    },
+    {
+      "case_id": "GSC9KNY0VEZXFSGWNF25",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 76299
+    },
+    {
+      "case_id": "HVE7DR3CUA2IM3RC6OMA",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        576,
+        576,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 248912
+    },
+    {
+      "case_id": "HZZ4O0BRKF8S0YX3NNF7",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        576,
+        576,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 254,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 240334
+    },
+    {
+      "case_id": "IDWWHGWJ5STOQXSDT6GU",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        576,
+        576,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 147221
+    },
+    {
+      "case_id": "IIY6TYJMTJIZRIZLB9YW",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 357300
+    },
+    {
+      "case_id": "IJJY51YW3W4YJJ7DTVTK",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 221798
+    },
+    {
+      "case_id": "IQYKPTWXVV9H0IHB8YXC",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 238698
+    },
+    {
+      "case_id": "JEC6HJ7SQJXBKVREX03F",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        576,
+        576,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 173018
+    },
+    {
+      "case_id": "JGFOLWJF7YCYD8DPHQNH",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        576,
+        576,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 183103
+    },
+    {
+      "case_id": "K32FD6LRSUSSXGS1YUOX",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        576,
+        576,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 254,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 139745
+    },
+    {
+      "case_id": "KM5RYAMP4P4ZP6XWP3Q2",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 374041
+    },
+    {
+      "case_id": "KSNYHUBHHUJTYJ14UQZR",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 145075
+    },
+    {
+      "case_id": "LH4FVU3TQDEC87YGN6FL",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 177500
+    },
+    {
+      "case_id": "LJSDNMND9SHKM7Q4IRHJ",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 177231
+    },
+    {
+      "case_id": "MFTDVMBWFNQ3F5KHBRDR",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 174305
+    },
+    {
+      "case_id": "MJHV7F65TB2A76CQLOC3",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 265542
+    },
+    {
+      "case_id": "MVKIPGBKTNSENNP1S4HB",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 171437
+    },
+    {
+      "case_id": "O5TSIKRD4AIB8K84WIR9",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        576,
+        576,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 254,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 204778
+    },
+    {
+      "case_id": "OIRDLE32TXZX942FVZMM",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 390093
+    },
+    {
+      "case_id": "PVNXUK681N9BY14K4Z86",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 186688
+    },
+    {
+      "case_id": "Q0MEX9ZIKAGJORSPLQ3Y",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 184269
+    },
+    {
+      "case_id": "QZC1W0FNR19KJFLOCFLH",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 226792
+    },
+    {
+      "case_id": "R8ER97O9UUN77C02VE2J",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 151880
+    },
+    {
+      "case_id": "TDDI6L3Y0L9VVFP9MNFS",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 136195
+    },
+    {
+      "case_id": "ULHWPWKKLTE921LQLH1P",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        576,
+        576,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 254962
+    },
+    {
+      "case_id": "UTBUJIWZMKP64E3N73YC",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        576,
+        576,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 261027
+    },
+    {
+      "case_id": "UZUZZT2W9IUSHL6ASOX3",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 305956
+    },
+    {
+      "case_id": "VDOF02M8ZHEAADFMS6NP",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 96796
+    },
+    {
+      "case_id": "VG4C826RAAKVMV9BQLVD",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 370920
+    },
+    {
+      "case_id": "VIXBEFTNVHZWKAKURJBN",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 183072
+    },
+    {
+      "case_id": "VQ2L3WM8KEVF6L44E6G9",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 220407
+    },
+    {
+      "case_id": "WBG9WYZ1B25WDT5WAT8T",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        576,
+        576,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 256344
+    },
+    {
+      "case_id": "WMDG2EFA6L2SNDZXIRU0",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        576,
+        576,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 227490
+    },
+    {
+      "case_id": "WSJB9P4JCXUVHBOYFVWL",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        576,
+        576,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 171083
+    },
+    {
+      "case_id": "WW8F5CO4S4K5IM5Z7EXX",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        576,
+        576,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 172686
+    },
+    {
+      "case_id": "X18LU5AOBNNDMLTA0JZL",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        576,
+        576,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 191008
+    },
+    {
+      "case_id": "XYDLYJ5CS19FDBVLJIPI",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 191250
+    },
+    {
+      "case_id": "Y7ZU0B2APPF54WG6PDMF",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        576,
+        576,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 212431
+    },
+    {
+      "case_id": "YDKD1HVHSME6NVMA8I39",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        576,
+        576,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 295607
+    },
+    {
+      "case_id": "Z9GMG63CJLL0VW893BB1",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 180983
+    },
+    {
+      "case_id": "ZIJLJAVQV3FJ6JSQOH1E",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        576,
+        576,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 531347
+    },
+    {
+      "case_id": "ZQPMJ4XEC5A4BISD45P1",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 331915
+    },
+    {
+      "case_id": "06SR5RBREL16DQ6M8LWS",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        576,
+        576,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 254,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 154296
+    },
+    {
+      "case_id": "1MHBF3G6DCPWHSKG7XCP",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 146217
+    },
+    {
+      "case_id": "4498CA6DZWELOXCBRYRF",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        576,
+        576,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 254,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 239017
+    },
+    {
+      "case_id": "4CHFJGF6ZUM7CMZTNFQF",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        576,
+        576,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 375512
+    },
+    {
+      "case_id": "5QFK2PMHNX7UALK52NNA",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        576,
+        576,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 236813
+    },
+    {
+      "case_id": "7FUCNXB39F78WTOP5K71",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 247214
+    },
+    {
+      "case_id": "A11O45O3NAXWM7T2H8CH",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 153216
+    },
+    {
+      "case_id": "A4R1S23KR0KU2WSYHK2X",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        576,
+        576,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 254,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 136440
+    },
+    {
+      "case_id": "AT5CRO5JUDBWD4RUPXSQ",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 230590
+    },
+    {
+      "case_id": "CBIJFVZ5L9BS0LKWE8YL",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 179617
+    },
+    {
+      "case_id": "DLKXBV73A55ZTSZ0QQI2",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        576,
+        576,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 254,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 222604
+    },
+    {
+      "case_id": "DQ5UYBGR5QP6L692QSG6",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 132128
+    },
+    {
+      "case_id": "I2VZ7N8H9QYNYT7ZZF1Y",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 198944
+    },
+    {
+      "case_id": "P1OTI3IWJUIB5NRLULLH",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        576,
+        576,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 200221
+    },
+    {
+      "case_id": "Q7J0WYM695R9MA285ZW0",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 193105
+    },
+    {
+      "case_id": "RSZY41MT2FGDKHWWL5L2",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 187501
+    },
+    {
+      "case_id": "SN4LF8SGBSRQUPTDSX78",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        576,
+        576,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 254,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 324221
+    },
+    {
+      "case_id": "UPT6DX9IQY9JAZ7HJKA7",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 206418
+    },
+    {
+      "case_id": "V0MZOWJ6MU3RMRCV9EXR",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 229095
+    },
+    {
+      "case_id": "WNPKE0W404QE9AELX1LR",
+      "split_dir": "Training Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 183663
+    },
+    {
+      "case_id": "23G5K6IOGZGUOK7SJEUM",
+      "split_dir": "Testing Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 349266
+    },
+    {
+      "case_id": "4URSJYI2QUH1T5S5PP47",
+      "split_dir": "Testing Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 409920
+    },
+    {
+      "case_id": "6HDYMTGBRI27MN763XTS",
+      "split_dir": "Testing Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 335876
+    },
+    {
+      "case_id": "8E00BQQJ7T5TQSSGZVGE",
+      "split_dir": "Testing Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 266737
+    },
+    {
+      "case_id": "8ISA3BO39HPSNJI0R8NH",
+      "split_dir": "Testing Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 174383
+    },
+    {
+      "case_id": "8NPX269KV6D4KOELNP9K",
+      "split_dir": "Testing Set",
+      "shape_xyz": [
+        576,
+        576,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 256326
+    },
+    {
+      "case_id": "9A18LTR49JLKPEZ7JNT5",
+      "split_dir": "Testing Set",
+      "shape_xyz": [
+        576,
+        576,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 203602
+    },
+    {
+      "case_id": "A878KB79QDIBFOTWB0T8",
+      "split_dir": "Testing Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 163050
+    },
+    {
+      "case_id": "AY8LY0Z1KBIZ6LMDOAZO",
+      "split_dir": "Testing Set",
+      "shape_xyz": [
+        576,
+        576,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 163154
+    },
+    {
+      "case_id": "BFZ0ZTFDZRFG9MCSV1GX",
+      "split_dir": "Testing Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 253858
+    },
+    {
+      "case_id": "BP5NOS0LX7U5IXFES424",
+      "split_dir": "Testing Set",
+      "shape_xyz": [
+        576,
+        576,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 164963
+    },
+    {
+      "case_id": "C26SF3UO4WM0Z4K04CIB",
+      "split_dir": "Testing Set",
+      "shape_xyz": [
+        576,
+        576,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 156338
+    },
+    {
+      "case_id": "D27523DQLTWE8UXKOPLP",
+      "split_dir": "Testing Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 196262
+    },
+    {
+      "case_id": "DD3MZ7M8J7MVQ38NZWBZ",
+      "split_dir": "Testing Set",
+      "shape_xyz": [
+        576,
+        576,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 311597
+    },
+    {
+      "case_id": "DN9MLO9S6NWF7GYPC8ZD",
+      "split_dir": "Testing Set",
+      "shape_xyz": [
+        576,
+        576,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 254,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 168457
+    },
+    {
+      "case_id": "DOCC2KQNQCEUHPZ9FAFF",
+      "split_dir": "Testing Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 242397
+    },
+    {
+      "case_id": "EJ2SQFVAC1DLV39LYGPH",
+      "split_dir": "Testing Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 186234
+    },
+    {
+      "case_id": "EMBIHZTK2UAOEFFJKR6U",
+      "split_dir": "Testing Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 165067
+    },
+    {
+      "case_id": "EYFKUIESSPFWI4NEHS9L",
+      "split_dir": "Testing Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 262028
+    },
+    {
+      "case_id": "FNGIIDQMPBSHC7X69OP1",
+      "split_dir": "Testing Set",
+      "shape_xyz": [
+        576,
+        576,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 253707
+    },
+    {
+      "case_id": "GCAGURFT38WSQCUVCBY0",
+      "split_dir": "Testing Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 185549
+    },
+    {
+      "case_id": "GT8QWVDGJSPJ2HR7KHIV",
+      "split_dir": "Testing Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 157735
+    },
+    {
+      "case_id": "HQTRB9LB3EVSJPJZDGGN",
+      "split_dir": "Testing Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 254,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 193830
+    },
+    {
+      "case_id": "JBDRUBWZBRLRDYIE4W7Q",
+      "split_dir": "Testing Set",
+      "shape_xyz": [
+        576,
+        576,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 254,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 314902
+    },
+    {
+      "case_id": "JG24TOFCDWAFMJ5O807R",
+      "split_dir": "Testing Set",
+      "shape_xyz": [
+        576,
+        576,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 226168
+    },
+    {
+      "case_id": "LCEN6QGISJXG5JUUAS03",
+      "split_dir": "Testing Set",
+      "shape_xyz": [
+        576,
+        576,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 254,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 204457
+    },
+    {
+      "case_id": "M2YZZ592ETSE09NBC233",
+      "split_dir": "Testing Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 153240
+    },
+    {
+      "case_id": "MKVZDR7UDH5HES9U96GW",
+      "split_dir": "Testing Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 146766
+    },
+    {
+      "case_id": "MMLTFB33BGQJ7ONEI0VF",
+      "split_dir": "Testing Set",
+      "shape_xyz": [
+        576,
+        576,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 173385
+    },
+    {
+      "case_id": "MS11OZHE0BROK9VKMOEV",
+      "split_dir": "Testing Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 165120
+    },
+    {
+      "case_id": "MY6ABW1UA1MR8MDHANWE",
+      "split_dir": "Testing Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 332318
+    },
+    {
+      "case_id": "N4NGBBT16Q282UZV4N8T",
+      "split_dir": "Testing Set",
+      "shape_xyz": [
+        576,
+        576,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 287643
+    },
+    {
+      "case_id": "NDHTGYOM4FD148VWEWNZ",
+      "split_dir": "Testing Set",
+      "shape_xyz": [
+        576,
+        576,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 254,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 373829
+    },
+    {
+      "case_id": "O2ZVEXE0D3QYA5B45XLH",
+      "split_dir": "Testing Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 329133
+    },
+    {
+      "case_id": "OKKIVTFXQIUPULV7MA6M",
+      "split_dir": "Testing Set",
+      "shape_xyz": [
+        576,
+        576,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 207460
+    },
+    {
+      "case_id": "ONP2RGD9L4VKKV4TFG56",
+      "split_dir": "Testing Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 189927
+    },
+    {
+      "case_id": "P1S3QI5UZLB08BQ9O36Z",
+      "split_dir": "Testing Set",
+      "shape_xyz": [
+        576,
+        576,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 382899
+    },
+    {
+      "case_id": "PFORURSOR4MDVNQ6QFCZ",
+      "split_dir": "Testing Set",
+      "shape_xyz": [
+        576,
+        576,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 209058
+    },
+    {
+      "case_id": "PVXH7YVTMKJ8TU7EQXYR",
+      "split_dir": "Testing Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 391917
+    },
+    {
+      "case_id": "S9HMB3CY6737UDPG6TN2",
+      "split_dir": "Testing Set",
+      "shape_xyz": [
+        576,
+        576,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 160759
+    },
+    {
+      "case_id": "SXKQQ96IEXC5VZOFAYFN",
+      "split_dir": "Testing Set",
+      "shape_xyz": [
+        576,
+        576,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 254,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 209625
+    },
+    {
+      "case_id": "TUU018TS5KUK40V4DRXT",
+      "split_dir": "Testing Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 443607
+    },
+    {
+      "case_id": "UOTC6ZI12583GTMLHKAL",
+      "split_dir": "Testing Set",
+      "shape_xyz": [
+        576,
+        576,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 254,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 184128
+    },
+    {
+      "case_id": "WFHG191DWLD2L8BD7CX6",
+      "split_dir": "Testing Set",
+      "shape_xyz": [
+        576,
+        576,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 192799
+    },
+    {
+      "case_id": "WOUSH4GFU19S1UW1TZL1",
+      "split_dir": "Testing Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 195503
+    },
+    {
+      "case_id": "WP01DLGNFGO38E0YVLSW",
+      "split_dir": "Testing Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 218844
+    },
+    {
+      "case_id": "X6X4WSG5012HCI1CRMX3",
+      "split_dir": "Testing Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 178516
+    },
+    {
+      "case_id": "X730E6GWUSAFPYEAH15H",
+      "split_dir": "Testing Set",
+      "shape_xyz": [
+        576,
+        576,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 193953
+    },
+    {
+      "case_id": "X8T5SI3H0DZO6R9NQ9G3",
+      "split_dir": "Testing Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 202890
+    },
+    {
+      "case_id": "XN0S3BIZP80EK5U2LXV5",
+      "split_dir": "Testing Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 352069
+    },
+    {
+      "case_id": "Y17SIT4UVACAM0WNBAWD",
+      "split_dir": "Testing Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 134558
+    },
+    {
+      "case_id": "YM0P648I12HKMF5QY4JO",
+      "split_dir": "Testing Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 218370
+    },
+    {
+      "case_id": "Z4WM2IZVVFPI4NNY9UKZ",
+      "split_dir": "Testing Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 220120
+    },
+    {
+      "case_id": "ZQR579BFRMYBFFBX3Q5M",
+      "split_dir": "Testing Set",
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "spacing_xyz": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "spacing_source": "NRRD space directions vector norms; header has no space units",
+      "space": "left-posterior-superior",
+      "space_units": null,
+      "image_min": 0,
+      "image_max": 255,
+      "label_values_raw": [
+        0,
+        255
+      ],
+      "foreground_voxels": 272753
+    }
+  ]
+}

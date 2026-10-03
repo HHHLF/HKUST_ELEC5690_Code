@@ -1,0 +1,130 @@
+[
+  {
+    "case_id": "Y17SIT4UVACAM0WNBAWD",
+    "role": "high_dice_low_hd95",
+    "slice_axis": "Z",
+    "slice_index": 71,
+    "slice_rule": "max_fp_plus_fn_among_slices_with_gt_area_at_least_20_percent_of_max",
+    "dice_3d": 0.9353327285340733,
+    "hd95_3d": 2.449489742783178,
+    "hd95_unit": "voxel",
+    "slice_tp": 1354,
+    "slice_fp": 519,
+    "slice_fn": 143,
+    "volume_tp": 131454,
+    "volume_fp": 15073,
+    "volume_fn": 3104,
+    "shape_xyz": [
+      640,
+      640,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "n_pred_components_26": 1,
+    "n_pred_components_without_gt_overlap": 0,
+    "largest_nonoverlap_component_voxels": 0,
+    "fraction_hd95_tail_on_selected_slice": 0.04835164835164835,
+    "max_surface_distance_voxel": 10.488088481701515,
+    "prediction_path": "outputs/segmentation3d/test/predictions/Y17SIT4UVACAM0WNBAWD.npz"
+  },
+  {
+    "case_id": "ONP2RGD9L4VKKV4TFG56",
+    "role": "median_dice",
+    "slice_axis": "Z",
+    "slice_index": 62,
+    "slice_rule": "max_fp_plus_fn_among_slices_with_gt_area_at_least_20_percent_of_max",
+    "dice_3d": 0.9134616887684652,
+    "hd95_3d": 5.744562646538029,
+    "hd95_unit": "voxel",
+    "slice_tp": 1964,
+    "slice_fp": 823,
+    "slice_fn": 144,
+    "volume_tp": 175307,
+    "volume_fp": 18596,
+    "volume_fn": 14620,
+    "shape_xyz": [
+      640,
+      640,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "n_pred_components_26": 4,
+    "n_pred_components_without_gt_overlap": 3,
+    "largest_nonoverlap_component_voxels": 439,
+    "fraction_hd95_tail_on_selected_slice": 0.01157943492357573,
+    "max_surface_distance_voxel": 236.75514777930383,
+    "prediction_path": "outputs/segmentation3d/test/predictions/ONP2RGD9L4VKKV4TFG56.npz"
+  },
+  {
+    "case_id": "NDHTGYOM4FD148VWEWNZ",
+    "role": "low_dice",
+    "slice_axis": "Z",
+    "slice_index": 48,
+    "slice_rule": "max_fp_plus_fn_among_slices_with_gt_area_at_least_20_percent_of_max",
+    "dice_3d": 0.8029042367988484,
+    "hd95_3d": 221.431705000899,
+    "hd95_unit": "voxel",
+    "slice_tp": 9645,
+    "slice_fp": 4975,
+    "slice_fn": 164,
+    "volume_tp": 363655,
+    "volume_fp": 168365,
+    "volume_fn": 10174,
+    "shape_xyz": [
+      576,
+      576,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "n_pred_components_26": 11,
+    "n_pred_components_without_gt_overlap": 10,
+    "largest_nonoverlap_component_voxels": 55202,
+    "fraction_hd95_tail_on_selected_slice": 0.028330601732615313,
+    "max_surface_distance_voxel": 250.2179050347916,
+    "prediction_path": "outputs/segmentation3d/test/predictions/NDHTGYOM4FD148VWEWNZ.npz"
+  },
+  {
+    "case_id": "GCAGURFT38WSQCUVCBY0",
+    "role": "high_hd95_decent_dice",
+    "slice_axis": "Z",
+    "slice_index": 38,
+    "slice_rule": "max_fp_plus_fn_among_slices_with_gt_area_at_least_20_percent_of_max",
+    "dice_3d": 0.9270833050794589,
+    "hd95_3d": 19.949937343260004,
+    "hd95_unit": "voxel",
+    "slice_tp": 4333,
+    "slice_fp": 403,
+    "slice_fn": 442,
+    "volume_tp": 170899,
+    "volume_fp": 12233,
+    "volume_fn": 14650,
+    "shape_xyz": [
+      640,
+      640,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "n_pred_components_26": 2,
+    "n_pred_components_without_gt_overlap": 1,
+    "largest_nonoverlap_component_voxels": 7371,
+    "fraction_hd95_tail_on_selected_slice": 0.03621730382293763,
+    "max_surface_distance_voxel": 70.78135347674555,
+    "prediction_path": "outputs/segmentation3d/test/predictions/GCAGURFT38WSQCUVCBY0.npz"
+  }
+]

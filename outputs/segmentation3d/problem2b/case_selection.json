@@ -1,0 +1,45 @@
+{
+  "source_metrics": "outputs/segmentation3d/test/per_case_metrics.csv",
+  "checkpoint": "outputs/segmentation3d/best.pt",
+  "checkpoint_epoch": 170,
+  "postprocess": "none",
+  "prediction_policy": "raw argmax of the sliding-window softmax; no connected-component cleanup",
+  "distance_unit": "voxel",
+  "distance_unit_reason": "NRRD space directions are (1,0,0) (0,1,0) (0,0,1) and the headers have no space units. HD95 is therefore reported in voxels. Millimetres are not assumed.",
+  "test_median_dice": 0.9133274316214348,
+  "test_dice_p75": 0.9310819087251815,
+  "rules": {
+    "high_dice_low_hd95": "Among test cases with Dice at or above the 75th percentile, pick the lowest HD95. Ties break toward higher Dice, then case_id.",
+    "median_dice": "Among the remaining cases, pick the Dice closest to the test-set median. Ties break by case_id.",
+    "low_dice": "Among the remaining cases, pick the lowest Dice. Ties break by case_id.",
+    "high_hd95_decent_dice": "Among the remaining cases with Dice at or above the test median, pick the highest HD95. Ties break by case_id."
+  },
+  "slice_rule": "Axis Z (array axis 2; NRRD sizes are X Y Z). Keep slices whose GT area is at least 20% of that case's maximum slice GT area. Among them, pick the slice with the most FP+FN voxels. Ties break toward larger GT area, then the smaller index. If none of those slices has an error, pick the slice with the largest GT area.",
+  "display": "Each Z slice is transposed for imshow so the horizontal axis is X and the vertical axis is Y, origin lower. All three columns share that orientation and the MRI window.",
+  "cases": [
+    {
+      "role": "high_dice_low_hd95",
+      "case_id": "Y17SIT4UVACAM0WNBAWD",
+      "dice": 0.9353327285340733,
+      "hd95": 2.449489742783178
+    },
+    {
+      "role": "median_dice",
+      "case_id": "ONP2RGD9L4VKKV4TFG56",
+      "dice": 0.9134616887684652,
+      "hd95": 5.744562646538029
+    },
+    {
+      "role": "low_dice",
+      "case_id": "NDHTGYOM4FD148VWEWNZ",
+      "dice": 0.8029042367988484,
+      "hd95": 221.431705000899
+    },
+    {
+      "role": "high_hd95_decent_dice",
+      "case_id": "GCAGURFT38WSQCUVCBY0",
+      "dice": 0.9270833050794589,
+      "hd95": 19.949937343260004
+    }
+  ]
+}

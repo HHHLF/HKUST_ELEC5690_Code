@@ -11,7 +11,6 @@ import matplotlib.pyplot as plt
 from matplotlib import font_manager
 import numpy as np
 
-_TRAPZ = getattr(np, "trapezoid", np.trapz)
 _FONT_DIR = Path(__file__).resolve().parents[2] / "fonts"
 
 
@@ -62,20 +61,20 @@ def plot_confusion(matrix, class_names, path: Path) -> None:
     fig, ax = plt.subplots(figsize=(10.2, 9.0))
     image = ax.imshow(rate, cmap="Blues", vmin=0.0, vmax=1.0, aspect="equal")
     colorbar = fig.colorbar(image, ax=ax, fraction=0.046, pad=0.03)
-    colorbar.set_label("Share of true class", fontsize=16)
-    colorbar.ax.tick_params(labelsize=14)
+    colorbar.set_label("Share of true class", fontsize=19)
+    colorbar.ax.tick_params(labelsize=17)
     colorbar.set_ticks([0, 0.25, 0.5, 0.75, 1])
     colorbar.set_ticklabels(["0%", "25%", "50%", "75%", "100%"])
-    ax.set_xticks(range(len(class_names)), class_names, fontsize=15)
-    ax.set_yticks(range(len(class_names)), class_names, fontsize=15)
+    ax.set_xticks(range(len(class_names)), class_names, fontsize=18)
+    ax.set_yticks(range(len(class_names)), class_names, fontsize=18)
     ax.set_xticks(np.arange(-0.5, len(class_names), 1), minor=True)
     ax.set_yticks(np.arange(-0.5, len(class_names), 1), minor=True)
     ax.grid(which="minor", color="white", linestyle="-", linewidth=2.5)
     ax.tick_params(which="minor", bottom=False, left=False)
     ax.tick_params(length=0)
-    ax.set_xlabel("Predicted", fontsize=17)
-    ax.set_ylabel("True", fontsize=17)
-    ax.set_title("Confusion matrix", fontsize=18, pad=12)
+    ax.set_xlabel("Predicted", fontsize=20)
+    ax.set_ylabel("True", fontsize=20)
+    ax.set_title("Confusion matrix", fontsize=21, pad=12)
     for spine in ax.spines.values():
         spine.set_visible(False)
     for i in range(array.shape[0]):
@@ -92,15 +91,15 @@ def plot_confusion(matrix, class_names, path: Path) -> None:
                 ha="center",
                 va="center",
                 color="white" if rate[i, j] >= 0.55 else "#1a1a1a",
-                fontsize=13,
+                fontsize=16,
                 linespacing=1.15,
             )
     _save(fig, path)
 
 
 def plot_roc(roc_rows: list[dict], path: Path) -> None:
-    fig, ax = plt.subplots(figsize=(7, 6))
-    ax.plot([0, 1], [0, 1], linestyle="--", color="0.6", label="chance")
+    fig, ax = plt.subplots(figsize=(9.5, 8.2))
+    ax.plot([0, 1], [0, 1], linestyle="--", color="0.6", linewidth=2.0, label="random")
     fpr_grid = np.linspace(0, 1, 201)
     interpolated = []
     for row in roc_rows:
@@ -114,13 +113,10 @@ def plot_roc(roc_rows: list[dict], path: Path) -> None:
         mean_tpr = np.mean(interpolated, axis=0)
         mean_tpr[0] = 0.0
         mean_tpr[-1] = 1.0
-        macro = float(_TRAPZ(mean_tpr, fpr_grid))
-        label = f"macro-average AUROC={macro:.3f}"
-        if len(interpolated) != len(roc_rows):
-            label += f" ({len(interpolated)}/{len(roc_rows)} classes)"
-        ax.plot(fpr_grid, mean_tpr, color="black", linewidth=2.0, label=label)
-    ax.set_xlabel("False positive rate")
-    ax.set_ylabel("True positive rate")
-    ax.set_title("Test one-vs-rest ROC")
-    ax.legend(loc="lower right", fontsize=8)
+        ax.plot(fpr_grid, mean_tpr, color="black", linewidth=2.8, label="Average ROC")
+    ax.set_xlabel("False positive rate", fontsize=20)
+    ax.set_ylabel("True positive rate", fontsize=20)
+    ax.set_title("Test one-vs-rest ROC", fontsize=22, pad=12)
+    ax.tick_params(labelsize=16)
+    ax.legend(loc="lower right", fontsize=16, framealpha=0.95)
     _save(fig, path)

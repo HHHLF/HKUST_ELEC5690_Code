@@ -256,17 +256,17 @@ def main() -> None:
         row_axes[1].imshow(color)
         row_axes[2].imshow(overlay)
         prob = float(row[f"prob_{row['pred_label']}"])
-        row_axes[0].set_ylabel(row["image_id"], fontsize=8)
+        row_axes[0].set_ylabel(row["image_id"], fontsize=17)
         titles = [
             f"true={row['true_label']}",
             f"pred={row['pred_label']} p={prob:.2f}",
             "overlay",
         ]
         for axis, title in zip(row_axes, titles):
-            axis.set_title(title, fontsize=9)
+            axis.set_title(title, fontsize=19)
             axis.set_xticks([])
             axis.set_yticks([])
-    fig.suptitle("Test Grad-CAM: original, heatmap, overlay")
+    fig.suptitle("Grad-CAM of Success and Failure Cases", fontsize=23)
     fig.tight_layout()
     fig.savefig(gradcam_dir / "panel.png", dpi=160, bbox_inches="tight")
     fig.savefig(gradcam_dir / "panel.pdf", bbox_inches="tight")

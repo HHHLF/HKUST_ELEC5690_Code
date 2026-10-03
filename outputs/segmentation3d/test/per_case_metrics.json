@@ -1,0 +1,1514 @@
+[
+  {
+    "dice": 0.9277485094731568,
+    "jaccard": 0.8652340590520551,
+    "asd": 7.230684968072597,
+    "hd95": 4.58257569495584,
+    "pred_foreground_voxels": 377155,
+    "gt_foreground_voxels": 349266,
+    "empty_status": "none",
+    "case_id": "23G5K6IOGZGUOK7SJEUM",
+    "shape_xyz": [
+      640,
+      640,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "n_windows": 242,
+    "pad_after": [
+      0,
+      0,
+      0
+    ],
+    "pad_restore": "constant 0 on the trailing side of each axis; crop back to original shape"
+  },
+  {
+    "dice": 0.9348176301109544,
+    "jaccard": 0.8776127511463877,
+    "asd": 1.6240716630908705,
+    "hd95": 5.477225575051661,
+    "pred_foreground_voxels": 405730,
+    "gt_foreground_voxels": 409920,
+    "empty_status": "none",
+    "case_id": "4URSJYI2QUH1T5S5PP47",
+    "shape_xyz": [
+      640,
+      640,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "n_windows": 242,
+    "pad_after": [
+      0,
+      0,
+      0
+    ],
+    "pad_restore": "constant 0 on the trailing side of each axis; crop back to original shape"
+  },
+  {
+    "dice": 0.8882128715417053,
+    "jaccard": 0.798905517797622,
+    "asd": 2.2166578727553192,
+    "hd95": 5.830951894845301,
+    "pred_foreground_voxels": 286396,
+    "gt_foreground_voxels": 335876,
+    "empty_status": "none",
+    "case_id": "6HDYMTGBRI27MN763XTS",
+    "shape_xyz": [
+      640,
+      640,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "n_windows": 242,
+    "pad_after": [
+      0,
+      0,
+      0
+    ],
+    "pad_restore": "constant 0 on the trailing side of each axis; crop back to original shape"
+  },
+  {
+    "dice": 0.8837515074194827,
+    "jaccard": 0.7917157454577579,
+    "asd": 3.0620980671149454,
+    "hd95": 17.378147196982766,
+    "pred_foreground_voxels": 220022,
+    "gt_foreground_voxels": 266737,
+    "empty_status": "none",
+    "case_id": "8E00BQQJ7T5TQSSGZVGE",
+    "shape_xyz": [
+      640,
+      640,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "n_windows": 242,
+    "pad_after": [
+      0,
+      0,
+      0
+    ],
+    "pad_restore": "constant 0 on the trailing side of each axis; crop back to original shape"
+  },
+  {
+    "dice": 0.8734417634155476,
+    "jaccard": 0.7753187851732244,
+    "asd": 5.8367457884276295,
+    "hd95": 50.6458290484024,
+    "pred_foreground_voxels": 199437,
+    "gt_foreground_voxels": 174383,
+    "empty_status": "none",
+    "case_id": "8ISA3BO39HPSNJI0R8NH",
+    "shape_xyz": [
+      640,
+      640,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "n_windows": 242,
+    "pad_after": [
+      0,
+      0,
+      0
+    ],
+    "pad_restore": "constant 0 on the trailing side of each axis; crop back to original shape"
+  },
+  {
+    "dice": 0.9357337835492371,
+    "jaccard": 0.8792290585618977,
+    "asd": 6.180233975354046,
+    "hd95": 3.7416573867739413,
+    "pred_foreground_voxels": 250690,
+    "gt_foreground_voxels": 256326,
+    "empty_status": "none",
+    "case_id": "8NPX269KV6D4KOELNP9K",
+    "shape_xyz": [
+      576,
+      576,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "n_windows": 200,
+    "pad_after": [
+      0,
+      0,
+      0
+    ],
+    "pad_restore": "constant 0 on the trailing side of each axis; crop back to original shape"
+  },
+  {
+    "dice": 0.9199212442075497,
+    "jaccard": 0.8517168209022004,
+    "asd": 1.6862803207336698,
+    "hd95": 4.123105625617661,
+    "pred_foreground_voxels": 214399,
+    "gt_foreground_voxels": 203602,
+    "empty_status": "none",
+    "case_id": "9A18LTR49JLKPEZ7JNT5",
+    "shape_xyz": [
+      576,
+      576,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "n_windows": 200,
+    "pad_after": [
+      0,
+      0,
+      0
+    ],
+    "pad_restore": "constant 0 on the trailing side of each axis; crop back to original shape"
+  },
+  {
+    "dice": 0.9333597730254126,
+    "jaccard": 0.8750464771732727,
+    "asd": 1.8032789070085231,
+    "hd95": 5.196152422706632,
+    "pred_foreground_voxels": 164740,
+    "gt_foreground_voxels": 163050,
+    "empty_status": "none",
+    "case_id": "A878KB79QDIBFOTWB0T8",
+    "shape_xyz": [
+      640,
+      640,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "n_windows": 242,
+    "pad_after": [
+      0,
+      0,
+      0
+    ],
+    "pad_restore": "constant 0 on the trailing side of each axis; crop back to original shape"
+  },
+  {
+    "dice": 0.898813383081534,
+    "jaccard": 0.8162225814156293,
+    "asd": 1.7832861466280328,
+    "hd95": 7.280109889280518,
+    "pred_foreground_voxels": 163826,
+    "gt_foreground_voxels": 163154,
+    "empty_status": "none",
+    "case_id": "AY8LY0Z1KBIZ6LMDOAZO",
+    "shape_xyz": [
+      576,
+      576,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "n_windows": 200,
+    "pad_after": [
+      0,
+      0,
+      0
+    ],
+    "pad_restore": "constant 0 on the trailing side of each axis; crop back to original shape"
+  },
+  {
+    "dice": 0.9020250098094409,
+    "jaccard": 0.8215351149782474,
+    "asd": 1.8574339366723294,
+    "hd95": 9.643650760992955,
+    "pred_foreground_voxels": 273695,
+    "gt_foreground_voxels": 253858,
+    "empty_status": "none",
+    "case_id": "BFZ0ZTFDZRFG9MCSV1GX",
+    "shape_xyz": [
+      640,
+      640,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "n_windows": 242,
+    "pad_after": [
+      0,
+      0,
+      0
+    ],
+    "pad_restore": "constant 0 on the trailing side of each axis; crop back to original shape"
+  },
+  {
+    "dice": 0.8985975007026707,
+    "jaccard": 0.8158665894402423,
+    "asd": 1.4346988662520919,
+    "hd95": 5.0,
+    "pred_foreground_voxels": 151686,
+    "gt_foreground_voxels": 164963,
+    "empty_status": "none",
+    "case_id": "BP5NOS0LX7U5IXFES424",
+    "shape_xyz": [
+      576,
+      576,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "n_windows": 200,
+    "pad_after": [
+      0,
+      0,
+      0
+    ],
+    "pad_restore": "constant 0 on the trailing side of each axis; crop back to original shape"
+  },
+  {
+    "dice": 0.9023525963818506,
+    "jaccard": 0.8220787416864896,
+    "asd": 1.4230467347104105,
+    "hd95": 4.898979485566356,
+    "pred_foreground_voxels": 143926,
+    "gt_foreground_voxels": 156338,
+    "empty_status": "none",
+    "case_id": "C26SF3UO4WM0Z4K04CIB",
+    "shape_xyz": [
+      576,
+      576,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "n_windows": 200,
+    "pad_after": [
+      0,
+      0,
+      0
+    ],
+    "pad_restore": "constant 0 on the trailing side of each axis; crop back to original shape"
+  },
+  {
+    "dice": 0.9087614217079356,
+    "jaccard": 0.8327797786715623,
+    "asd": 2.2066284941459817,
+    "hd95": 8.700534732310093,
+    "pred_foreground_voxels": 196083,
+    "gt_foreground_voxels": 196262,
+    "empty_status": "none",
+    "case_id": "D27523DQLTWE8UXKOPLP",
+    "shape_xyz": [
+      640,
+      640,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "n_windows": 242,
+    "pad_after": [
+      0,
+      0,
+      0
+    ],
+    "pad_restore": "constant 0 on the trailing side of each axis; crop back to original shape"
+  },
+  {
+    "dice": 0.9197309012840368,
+    "jaccard": 0.85139054924116,
+    "asd": 1.4747231741746551,
+    "hd95": 4.358898943540674,
+    "pred_foreground_voxels": 298588,
+    "gt_foreground_voxels": 311597,
+    "empty_status": "none",
+    "case_id": "DD3MZ7M8J7MVQ38NZWBZ",
+    "shape_xyz": [
+      576,
+      576,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "n_windows": 200,
+    "pad_after": [
+      0,
+      0,
+      0
+    ],
+    "pad_restore": "constant 0 on the trailing side of each axis; crop back to original shape"
+  },
+  {
+    "dice": 0.8635911590996732,
+    "jaccard": 0.7599299899985712,
+    "asd": 2.746688375097302,
+    "hd95": 14.177446878757825,
+    "pred_foreground_voxels": 176440,
+    "gt_foreground_voxels": 168457,
+    "empty_status": "none",
+    "case_id": "DN9MLO9S6NWF7GYPC8ZD",
+    "shape_xyz": [
+      576,
+      576,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "n_windows": 200,
+    "pad_after": [
+      0,
+      0,
+      0
+    ],
+    "pad_restore": "constant 0 on the trailing side of each axis; crop back to original shape"
+  },
+  {
+    "dice": 0.9344205839667429,
+    "jaccard": 0.8769131328054665,
+    "asd": 2.630801302581189,
+    "hd95": 5.0990195135927845,
+    "pred_foreground_voxels": 245439,
+    "gt_foreground_voxels": 242397,
+    "empty_status": "none",
+    "case_id": "DOCC2KQNQCEUHPZ9FAFF",
+    "shape_xyz": [
+      640,
+      640,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "n_windows": 242,
+    "pad_after": [
+      0,
+      0,
+      0
+    ],
+    "pad_restore": "constant 0 on the trailing side of each axis; crop back to original shape"
+  },
+  {
+    "dice": 0.9297955506159917,
+    "jaccard": 0.8688017987134762,
+    "asd": 1.7876235987112667,
+    "hd95": 5.0990195135927845,
+    "pred_foreground_voxels": 184469,
+    "gt_foreground_voxels": 186234,
+    "empty_status": "none",
+    "case_id": "EJ2SQFVAC1DLV39LYGPH",
+    "shape_xyz": [
+      640,
+      640,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "n_windows": 242,
+    "pad_after": [
+      0,
+      0,
+      0
+    ],
+    "pad_restore": "constant 0 on the trailing side of each axis; crop back to original shape"
+  },
+  {
+    "dice": 0.9052071771834211,
+    "jaccard": 0.8268296597474856,
+    "asd": 1.5045098230579204,
+    "hd95": 5.744562646538029,
+    "pred_foreground_voxels": 176404,
+    "gt_foreground_voxels": 165067,
+    "empty_status": "none",
+    "case_id": "EMBIHZTK2UAOEFFJKR6U",
+    "shape_xyz": [
+      640,
+      640,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "n_windows": 242,
+    "pad_after": [
+      0,
+      0,
+      0
+    ],
+    "pad_restore": "constant 0 on the trailing side of each axis; crop back to original shape"
+  },
+  {
+    "dice": 0.8734332186789483,
+    "jaccard": 0.7753053198095632,
+    "asd": 3.0048078252459507,
+    "hd95": 15.033296378372908,
+    "pred_foreground_voxels": 235409,
+    "gt_foreground_voxels": 262028,
+    "empty_status": "none",
+    "case_id": "EYFKUIESSPFWI4NEHS9L",
+    "shape_xyz": [
+      640,
+      640,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "n_windows": 242,
+    "pad_after": [
+      0,
+      0,
+      0
+    ],
+    "pad_restore": "constant 0 on the trailing side of each axis; crop back to original shape"
+  },
+  {
+    "dice": 0.911338594123552,
+    "jaccard": 0.837118491759025,
+    "asd": 1.8555850790410324,
+    "hd95": 6.6332495807108,
+    "pred_foreground_voxels": 255342,
+    "gt_foreground_voxels": 253707,
+    "empty_status": "none",
+    "case_id": "FNGIIDQMPBSHC7X69OP1",
+    "shape_xyz": [
+      576,
+      576,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "n_windows": 200,
+    "pad_after": [
+      0,
+      0,
+      0
+    ],
+    "pad_restore": "constant 0 on the trailing side of each axis; crop back to original shape"
+  },
+  {
+    "dice": 0.9270833050794589,
+    "jaccard": 0.8640776208148365,
+    "asd": 3.6096429638986143,
+    "hd95": 19.949937343260004,
+    "pred_foreground_voxels": 183132,
+    "gt_foreground_voxels": 185549,
+    "empty_status": "none",
+    "case_id": "GCAGURFT38WSQCUVCBY0",
+    "shape_xyz": [
+      640,
+      640,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "n_windows": 242,
+    "pad_after": [
+      0,
+      0,
+      0
+    ],
+    "pad_restore": "constant 0 on the trailing side of each axis; crop back to original shape"
+  },
+  {
+    "dice": 0.9198398266012747,
+    "jaccard": 0.8515772468327523,
+    "asd": 1.3319263048401302,
+    "hd95": 3.1622776601683795,
+    "pred_foreground_voxels": 168911,
+    "gt_foreground_voxels": 157735,
+    "empty_status": "none",
+    "case_id": "GT8QWVDGJSPJ2HR7KHIV",
+    "shape_xyz": [
+      640,
+      640,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "n_windows": 242,
+    "pad_after": [
+      0,
+      0,
+      0
+    ],
+    "pad_restore": "constant 0 on the trailing side of each axis; crop back to original shape"
+  },
+  {
+    "dice": 0.8981509822122984,
+    "jaccard": 0.815130719103068,
+    "asd": 2.2119685194195142,
+    "hd95": 5.0990195135927845,
+    "pred_foreground_voxels": 204760,
+    "gt_foreground_voxels": 193830,
+    "empty_status": "none",
+    "case_id": "HQTRB9LB3EVSJPJZDGGN",
+    "shape_xyz": [
+      640,
+      640,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "n_windows": 242,
+    "pad_after": [
+      0,
+      0,
+      0
+    ],
+    "pad_restore": "constant 0 on the trailing side of each axis; crop back to original shape"
+  },
+  {
+    "dice": 0.9291226727795565,
+    "jaccard": 0.8676275509457058,
+    "asd": 1.6959960488339014,
+    "hd95": 5.744562646538029,
+    "pred_foreground_voxels": 322876,
+    "gt_foreground_voxels": 314902,
+    "empty_status": "none",
+    "case_id": "JBDRUBWZBRLRDYIE4W7Q",
+    "shape_xyz": [
+      576,
+      576,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "n_windows": 200,
+    "pad_after": [
+      0,
+      0,
+      0
+    ],
+    "pad_restore": "constant 0 on the trailing side of each axis; crop back to original shape"
+  },
+  {
+    "dice": 0.9253109147163682,
+    "jaccard": 0.8610033612392743,
+    "asd": 1.243423909176886,
+    "hd95": 3.7416573867739413,
+    "pred_foreground_voxels": 219533,
+    "gt_foreground_voxels": 226168,
+    "empty_status": "none",
+    "case_id": "JG24TOFCDWAFMJ5O807R",
+    "shape_xyz": [
+      576,
+      576,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "n_windows": 200,
+    "pad_after": [
+      0,
+      0,
+      0
+    ],
+    "pad_restore": "constant 0 on the trailing side of each axis; crop back to original shape"
+  },
+  {
+    "dice": 0.9139198986681286,
+    "jaccard": 0.8414848016710547,
+    "asd": 5.976150721654734,
+    "hd95": 8.717797887081348,
+    "pred_foreground_voxels": 218707,
+    "gt_foreground_voxels": 204457,
+    "empty_status": "none",
+    "case_id": "LCEN6QGISJXG5JUUAS03",
+    "shape_xyz": [
+      576,
+      576,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "n_windows": 200,
+    "pad_after": [
+      0,
+      0,
+      0
+    ],
+    "pad_restore": "constant 0 on the trailing side of each axis; crop back to original shape"
+  },
+  {
+    "dice": 0.9028787642616347,
+    "jaccard": 0.8229525916103475,
+    "asd": 10.538891434868441,
+    "hd95": 15.684387141358123,
+    "pred_foreground_voxels": 173949,
+    "gt_foreground_voxels": 153240,
+    "empty_status": "none",
+    "case_id": "M2YZZ592ETSE09NBC233",
+    "shape_xyz": [
+      640,
+      640,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "n_windows": 242,
+    "pad_after": [
+      0,
+      0,
+      0
+    ],
+    "pad_restore": "constant 0 on the trailing side of each axis; crop back to original shape"
+  },
+  {
+    "dice": 0.8723377128395392,
+    "jaccard": 0.773580639143437,
+    "asd": 5.3799378248163245,
+    "hd95": 40.260402210054906,
+    "pred_foreground_voxels": 166968,
+    "gt_foreground_voxels": 146766,
+    "empty_status": "none",
+    "case_id": "MKVZDR7UDH5HES9U96GW",
+    "shape_xyz": [
+      640,
+      640,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "n_windows": 242,
+    "pad_after": [
+      0,
+      0,
+      0
+    ],
+    "pad_restore": "constant 0 on the trailing side of each axis; crop back to original shape"
+  },
+  {
+    "dice": 0.8696628012611554,
+    "jaccard": 0.7693835098335855,
+    "asd": 1.8925374598851448,
+    "hd95": 6.0,
+    "pred_foreground_voxels": 182162,
+    "gt_foreground_voxels": 173385,
+    "empty_status": "none",
+    "case_id": "MMLTFB33BGQJ7ONEI0VF",
+    "shape_xyz": [
+      576,
+      576,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "n_windows": 200,
+    "pad_after": [
+      0,
+      0,
+      0
+    ],
+    "pad_restore": "constant 0 on the trailing side of each axis; crop back to original shape"
+  },
+  {
+    "dice": 0.935074278545288,
+    "jaccard": 0.8780652581740218,
+    "asd": 1.0063995088983329,
+    "hd95": 3.7416573867739413,
+    "pred_foreground_voxels": 171249,
+    "gt_foreground_voxels": 165120,
+    "empty_status": "none",
+    "case_id": "MS11OZHE0BROK9VKMOEV",
+    "shape_xyz": [
+      640,
+      640,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "n_windows": 242,
+    "pad_after": [
+      0,
+      0,
+      0
+    ],
+    "pad_restore": "constant 0 on the trailing side of each axis; crop back to original shape"
+  },
+  {
+    "dice": 0.9315106947615781,
+    "jaccard": 0.8718016083031562,
+    "asd": 1.8397174332542274,
+    "hd95": 4.123105625617661,
+    "pred_foreground_voxels": 358768,
+    "gt_foreground_voxels": 332318,
+    "empty_status": "none",
+    "case_id": "MY6ABW1UA1MR8MDHANWE",
+    "shape_xyz": [
+      640,
+      640,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "n_windows": 242,
+    "pad_after": [
+      0,
+      0,
+      0
+    ],
+    "pad_restore": "constant 0 on the trailing side of each axis; crop back to original shape"
+  },
+  {
+    "dice": 0.835508914809811,
+    "jaccard": 0.7174884594958945,
+    "asd": 11.400160038117019,
+    "hd95": 72.24264668462804,
+    "pred_foreground_voxels": 342993,
+    "gt_foreground_voxels": 287643,
+    "empty_status": "none",
+    "case_id": "N4NGBBT16Q282UZV4N8T",
+    "shape_xyz": [
+      576,
+      576,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "n_windows": 200,
+    "pad_after": [
+      0,
+      0,
+      0
+    ],
+    "pad_restore": "constant 0 on the trailing side of each axis; crop back to original shape"
+  },
+  {
+    "dice": 0.8029042367988484,
+    "jaccard": 0.6707101148297473,
+    "asd": 39.2992693192884,
+    "hd95": 221.431705000899,
+    "pred_foreground_voxels": 532020,
+    "gt_foreground_voxels": 373829,
+    "empty_status": "none",
+    "case_id": "NDHTGYOM4FD148VWEWNZ",
+    "shape_xyz": [
+      576,
+      576,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "n_windows": 200,
+    "pad_after": [
+      0,
+      0,
+      0
+    ],
+    "pad_restore": "constant 0 on the trailing side of each axis; crop back to original shape"
+  },
+  {
+    "dice": 0.915431370253535,
+    "jaccard": 0.8440511233185231,
+    "asd": 1.6183438711771199,
+    "hd95": 6.0,
+    "pred_foreground_voxels": 302969,
+    "gt_foreground_voxels": 329133,
+    "empty_status": "none",
+    "case_id": "O2ZVEXE0D3QYA5B45XLH",
+    "shape_xyz": [
+      640,
+      640,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "n_windows": 242,
+    "pad_after": [
+      0,
+      0,
+      0
+    ],
+    "pad_restore": "constant 0 on the trailing side of each axis; crop back to original shape"
+  },
+  {
+    "dice": 0.9340875553369404,
+    "jaccard": 0.8763267189663129,
+    "asd": 1.1656759836743842,
+    "hd95": 3.1622776601683795,
+    "pred_foreground_voxels": 219470,
+    "gt_foreground_voxels": 207460,
+    "empty_status": "none",
+    "case_id": "OKKIVTFXQIUPULV7MA6M",
+    "shape_xyz": [
+      576,
+      576,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "n_windows": 200,
+    "pad_after": [
+      0,
+      0,
+      0
+    ],
+    "pad_restore": "constant 0 on the trailing side of each axis; crop back to original shape"
+  },
+  {
+    "dice": 0.9134616887684652,
+    "jaccard": 0.8407082192372064,
+    "asd": 1.4371931990632298,
+    "hd95": 5.744562646538029,
+    "pred_foreground_voxels": 193903,
+    "gt_foreground_voxels": 189927,
+    "empty_status": "none",
+    "case_id": "ONP2RGD9L4VKKV4TFG56",
+    "shape_xyz": [
+      640,
+      640,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "n_windows": 242,
+    "pad_after": [
+      0,
+      0,
+      0
+    ],
+    "pad_restore": "constant 0 on the trailing side of each axis; crop back to original shape"
+  },
+  {
+    "dice": 0.9131931744744043,
+    "jaccard": 0.8402534406542493,
+    "asd": 2.313084303303896,
+    "hd95": 9.0,
+    "pred_foreground_voxels": 344371,
+    "gt_foreground_voxels": 382899,
+    "empty_status": "none",
+    "case_id": "P1S3QI5UZLB08BQ9O36Z",
+    "shape_xyz": [
+      576,
+      576,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "n_windows": 200,
+    "pad_after": [
+      0,
+      0,
+      0
+    ],
+    "pad_restore": "constant 0 on the trailing side of each axis; crop back to original shape"
+  },
+  {
+    "dice": 0.8813931927014137,
+    "jaccard": 0.787938341650147,
+    "asd": 9.932920077348411,
+    "hd95": 18.801581551493513,
+    "pred_foreground_voxels": 209434,
+    "gt_foreground_voxels": 209058,
+    "empty_status": "none",
+    "case_id": "PFORURSOR4MDVNQ6QFCZ",
+    "shape_xyz": [
+      576,
+      576,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "n_windows": 200,
+    "pad_after": [
+      0,
+      0,
+      0
+    ],
+    "pad_restore": "constant 0 on the trailing side of each axis; crop back to original shape"
+  },
+  {
+    "dice": 0.8832801444989331,
+    "jaccard": 0.7909594695104705,
+    "asd": 13.434051275264855,
+    "hd95": 90.58863049702991,
+    "pred_foreground_voxels": 462899,
+    "gt_foreground_voxels": 391917,
+    "empty_status": "none",
+    "case_id": "PVXH7YVTMKJ8TU7EQXYR",
+    "shape_xyz": [
+      640,
+      640,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "n_windows": 242,
+    "pad_after": [
+      0,
+      0,
+      0
+    ],
+    "pad_restore": "constant 0 on the trailing side of each axis; crop back to original shape"
+  },
+  {
+    "dice": 0.9001532768737711,
+    "jaccard": 0.8184352036937976,
+    "asd": 2.2412037932566164,
+    "hd95": 9.273618495495704,
+    "pred_foreground_voxels": 162186,
+    "gt_foreground_voxels": 160759,
+    "empty_status": "none",
+    "case_id": "S9HMB3CY6737UDPG6TN2",
+    "shape_xyz": [
+      576,
+      576,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "n_windows": 200,
+    "pad_after": [
+      0,
+      0,
+      0
+    ],
+    "pad_restore": "constant 0 on the trailing side of each axis; crop back to original shape"
+  },
+  {
+    "dice": 0.8864198546927653,
+    "jaccard": 0.7960090330527613,
+    "asd": 2.631516940158744,
+    "hd95": 10.0,
+    "pred_foreground_voxels": 227793,
+    "gt_foreground_voxels": 209625,
+    "empty_status": "none",
+    "case_id": "SXKQQ96IEXC5VZOFAYFN",
+    "shape_xyz": [
+      576,
+      576,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "n_windows": 200,
+    "pad_after": [
+      0,
+      0,
+      0
+    ],
+    "pad_restore": "constant 0 on the trailing side of each axis; crop back to original shape"
+  },
+  {
+    "dice": 0.899611358261531,
+    "jaccard": 0.8175396620236499,
+    "asd": 13.88578983123387,
+    "hd95": 153.50016283837022,
+    "pred_foreground_voxels": 463398,
+    "gt_foreground_voxels": 443607,
+    "empty_status": "none",
+    "case_id": "TUU018TS5KUK40V4DRXT",
+    "shape_xyz": [
+      640,
+      640,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "n_windows": 242,
+    "pad_after": [
+      0,
+      0,
+      0
+    ],
+    "pad_restore": "constant 0 on the trailing side of each axis; crop back to original shape"
+  },
+  {
+    "dice": 0.9203945451770875,
+    "jaccard": 0.8525286168807471,
+    "asd": 2.16437940389226,
+    "hd95": 7.874007874011811,
+    "pred_foreground_voxels": 176287,
+    "gt_foreground_voxels": 184128,
+    "empty_status": "none",
+    "case_id": "UOTC6ZI12583GTMLHKAL",
+    "shape_xyz": [
+      576,
+      576,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "n_windows": 200,
+    "pad_after": [
+      0,
+      0,
+      0
+    ],
+    "pad_restore": "constant 0 on the trailing side of each axis; crop back to original shape"
+  },
+  {
+    "dice": 0.9409603993021408,
+    "jaccard": 0.888503507028529,
+    "asd": 1.0458121032683962,
+    "hd95": 3.3166247903554,
+    "pred_foreground_voxels": 198684,
+    "gt_foreground_voxels": 192799,
+    "empty_status": "none",
+    "case_id": "WFHG191DWLD2L8BD7CX6",
+    "shape_xyz": [
+      576,
+      576,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "n_windows": 200,
+    "pad_after": [
+      0,
+      0,
+      0
+    ],
+    "pad_restore": "constant 0 on the trailing side of each axis; crop back to original shape"
+  },
+  {
+    "dice": 0.9029183502284881,
+    "jaccard": 0.8230183691583375,
+    "asd": 1.576796889203053,
+    "hd95": 5.656854249492381,
+    "pred_foreground_voxels": 182416,
+    "gt_foreground_voxels": 195503,
+    "empty_status": "none",
+    "case_id": "WOUSH4GFU19S1UW1TZL1",
+    "shape_xyz": [
+      640,
+      640,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "n_windows": 242,
+    "pad_after": [
+      0,
+      0,
+      0
+    ],
+    "pad_restore": "constant 0 on the trailing side of each axis; crop back to original shape"
+  },
+  {
+    "dice": 0.9255081144960352,
+    "jaccard": 0.8613449082139394,
+    "asd": 1.3510885259970586,
+    "hd95": 3.605551275463989,
+    "pred_foreground_voxels": 224560,
+    "gt_foreground_voxels": 218844,
+    "empty_status": "none",
+    "case_id": "WP01DLGNFGO38E0YVLSW",
+    "shape_xyz": [
+      640,
+      640,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "n_windows": 242,
+    "pad_after": [
+      0,
+      0,
+      0
+    ],
+    "pad_restore": "constant 0 on the trailing side of each axis; crop back to original shape"
+  },
+  {
+    "dice": 0.936195120898566,
+    "jaccard": 0.8800440186825838,
+    "asd": 3.9315029880065184,
+    "hd95": 4.0,
+    "pred_foreground_voxels": 192208,
+    "gt_foreground_voxels": 178516,
+    "empty_status": "none",
+    "case_id": "X6X4WSG5012HCI1CRMX3",
+    "shape_xyz": [
+      640,
+      640,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "n_windows": 242,
+    "pad_after": [
+      0,
+      0,
+      0
+    ],
+    "pad_restore": "constant 0 on the trailing side of each axis; crop back to original shape"
+  },
+  {
+    "dice": 0.9420653637108937,
+    "jaccard": 0.890475962688352,
+    "asd": 0.9707537275663436,
+    "hd95": 2.8284271247461903,
+    "pred_foreground_voxels": 201251,
+    "gt_foreground_voxels": 193953,
+    "empty_status": "none",
+    "case_id": "X730E6GWUSAFPYEAH15H",
+    "shape_xyz": [
+      576,
+      576,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "n_windows": 200,
+    "pad_after": [
+      0,
+      0,
+      0
+    ],
+    "pad_restore": "constant 0 on the trailing side of each axis; crop back to original shape"
+  },
+  {
+    "dice": 0.9364376009603272,
+    "jaccard": 0.8804726472145584,
+    "asd": 1.0927406105555957,
+    "hd95": 3.7416573867739413,
+    "pred_foreground_voxels": 201972,
+    "gt_foreground_voxels": 202890,
+    "empty_status": "none",
+    "case_id": "X8T5SI3H0DZO6R9NQ9G3",
+    "shape_xyz": [
+      640,
+      640,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "n_windows": 242,
+    "pad_after": [
+      0,
+      0,
+      0
+    ],
+    "pad_restore": "constant 0 on the trailing side of each axis; crop back to original shape"
+  },
+  {
+    "dice": 0.9410984413662917,
+    "jaccard": 0.8887496988677427,
+    "asd": 1.218644797994289,
+    "hd95": 3.7416573867739413,
+    "pred_foreground_voxels": 353549,
+    "gt_foreground_voxels": 352069,
+    "empty_status": "none",
+    "case_id": "XN0S3BIZP80EK5U2LXV5",
+    "shape_xyz": [
+      640,
+      640,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "n_windows": 242,
+    "pad_after": [
+      0,
+      0,
+      0
+    ],
+    "pad_restore": "constant 0 on the trailing side of each axis; crop back to original shape"
+  },
+  {
+    "dice": 0.9353327285340733,
+    "jaccard": 0.8785211620586643,
+    "asd": 0.9362455876574506,
+    "hd95": 2.449489742783178,
+    "pred_foreground_voxels": 146527,
+    "gt_foreground_voxels": 134558,
+    "empty_status": "none",
+    "case_id": "Y17SIT4UVACAM0WNBAWD",
+    "shape_xyz": [
+      640,
+      640,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "n_windows": 242,
+    "pad_after": [
+      0,
+      0,
+      0
+    ],
+    "pad_restore": "constant 0 on the trailing side of each axis; crop back to original shape"
+  },
+  {
+    "dice": 0.9393811809395496,
+    "jaccard": 0.8856916019760056,
+    "asd": 0.9745028758192605,
+    "hd95": 3.0,
+    "pred_foreground_voxels": 209154,
+    "gt_foreground_voxels": 218370,
+    "empty_status": "none",
+    "case_id": "YM0P648I12HKMF5QY4JO",
+    "shape_xyz": [
+      640,
+      640,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "n_windows": 242,
+    "pad_after": [
+      0,
+      0,
+      0
+    ],
+    "pad_restore": "constant 0 on the trailing side of each axis; crop back to original shape"
+  },
+  {
+    "dice": 0.8573303627748528,
+    "jaccard": 0.7502871651134349,
+    "asd": 2.322682961492405,
+    "hd95": 12.0,
+    "pred_foreground_voxels": 250723,
+    "gt_foreground_voxels": 220120,
+    "empty_status": "none",
+    "case_id": "Z4WM2IZVVFPI4NNY9UKZ",
+    "shape_xyz": [
+      640,
+      640,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "n_windows": 242,
+    "pad_after": [
+      0,
+      0,
+      0
+    ],
+    "pad_restore": "constant 0 on the trailing side of each axis; crop back to original shape"
+  },
+  {
+    "dice": 0.9118403964299201,
+    "jaccard": 0.8379656747395472,
+    "asd": 2.2257223546370666,
+    "hd95": 9.219544457292887,
+    "pred_foreground_voxels": 270092,
+    "gt_foreground_voxels": 272753,
+    "empty_status": "none",
+    "case_id": "ZQR579BFRMYBFFBX3Q5M",
+    "shape_xyz": [
+      640,
+      640,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "n_windows": 242,
+    "pad_after": [
+      0,
+      0,
+      0
+    ],
+    "pad_restore": "constant 0 on the trailing side of each axis; crop back to original shape"
+  }
+]

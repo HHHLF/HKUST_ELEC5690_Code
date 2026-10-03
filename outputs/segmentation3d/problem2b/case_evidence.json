@@ -1,0 +1,558 @@
+[
+  {
+    "role": "high_dice_low_hd95",
+    "case_id": "Y17SIT4UVACAM0WNBAWD",
+    "selection_stats": {
+      "test_median_dice": 0.9133274316214348,
+      "test_dice_p75": 0.9310819087251815
+    },
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "shape_xyz": [
+      640,
+      640,
+      88
+    ],
+    "prediction_path": "outputs/segmentation3d/test/predictions/Y17SIT4UVACAM0WNBAWD.npz",
+    "prediction_source": "saved_raw_prediction",
+    "slice_axis": "Z",
+    "slice_axis_index": 2,
+    "slice_index": 71,
+    "slice_rule": "max_fp_plus_fn_among_slices_with_gt_area_at_least_20_percent_of_max",
+    "dice": 0.9353327285340733,
+    "hd95": 2.449489742783178,
+    "distance_unit": "voxel",
+    "window_vmin": 1.0,
+    "window_vmax": 85.98999999999069,
+    "slice_tp": 1354,
+    "slice_fp": 519,
+    "slice_fn": 143,
+    "volume_tp": 131454,
+    "volume_fp": 15073,
+    "volume_fn": 3104,
+    "components": [
+      {
+        "label": 1,
+        "voxels": 146527,
+        "overlap_voxels": 131454,
+        "centroid_xyz": [
+          410.6032198843899,
+          326.8507851795232,
+          52.539804950623434
+        ],
+        "min_distance_to_gt_voxel": 0.0,
+        "z_min": 27,
+        "z_max": 78,
+        "voxels_on_selected_slice": 1873
+      }
+    ],
+    "tail": {
+      "recomputed_hd95": 2.449489742783178,
+      "n_surface_points": 32797,
+      "n_tail_points": 1820,
+      "n_tail_points_on_selected_slice": 88,
+      "fraction_tail_on_selected_slice": 0.04835164835164835,
+      "max_surface_distance": 10.488088481701515,
+      "fraction_surface_farther_than_10_voxels": 3.0490593651858403e-05,
+      "top_tail_z_slices": [
+        {
+          "z": 31,
+          "n_tail_points": 96
+        },
+        {
+          "z": 74,
+          "n_tail_points": 89
+        },
+        {
+          "z": 71,
+          "n_tail_points": 88
+        },
+        {
+          "z": 72,
+          "n_tail_points": 76
+        },
+        {
+          "z": 68,
+          "n_tail_points": 75
+        }
+      ]
+    },
+    "nrrd_space_units": null,
+    "foreground_rgb": [
+      0.9,
+      0.16,
+      0.12
+    ],
+    "foreground_alpha": 0.45,
+    "_row_caption": "Case Y17SIT4UVACAM0WNBAWD  |  Z slice 71  |  3D Dice: 93.53%  |  3D HD95: 2.45 voxel"
+  },
+  {
+    "role": "median_dice",
+    "case_id": "ONP2RGD9L4VKKV4TFG56",
+    "selection_stats": {
+      "test_median_dice": 0.9133274316214348,
+      "test_dice_p75": 0.9310819087251815
+    },
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "shape_xyz": [
+      640,
+      640,
+      88
+    ],
+    "prediction_path": "outputs/segmentation3d/test/predictions/ONP2RGD9L4VKKV4TFG56.npz",
+    "prediction_source": "saved_raw_prediction",
+    "slice_axis": "Z",
+    "slice_axis_index": 2,
+    "slice_index": 62,
+    "slice_rule": "max_fp_plus_fn_among_slices_with_gt_area_at_least_20_percent_of_max",
+    "dice": 0.9134616887684652,
+    "hd95": 5.744562646538029,
+    "distance_unit": "voxel",
+    "window_vmin": 1.0,
+    "window_vmax": 70.0,
+    "slice_tp": 1964,
+    "slice_fp": 823,
+    "slice_fn": 144,
+    "volume_tp": 175307,
+    "volume_fp": 18596,
+    "volume_fn": 14620,
+    "components": [
+      {
+        "label": 1,
+        "voxels": 193310,
+        "overlap_voxels": 175307,
+        "centroid_xyz": [
+          315.8715689824634,
+          339.697315193213,
+          45.891438621902644
+        ],
+        "min_distance_to_gt_voxel": 0.0,
+        "z_min": 20,
+        "z_max": 77,
+        "voxels_on_selected_slice": 2787
+      },
+      {
+        "label": 2,
+        "voxels": 439,
+        "overlap_voxels": 0,
+        "centroid_xyz": [
+          345.9111617312073,
+          322.6560364464693,
+          70.71753986332574
+        ],
+        "min_distance_to_gt_voxel": 8.06225774829855,
+        "z_min": 68,
+        "z_max": 73,
+        "voxels_on_selected_slice": 0
+      },
+      {
+        "label": 3,
+        "voxels": 153,
+        "overlap_voxels": 0,
+        "centroid_xyz": [
+          368.562091503268,
+          315.22222222222223,
+          67.98692810457516
+        ],
+        "min_distance_to_gt_voxel": 14.45683229480096,
+        "z_min": 66,
+        "z_max": 70,
+        "voxels_on_selected_slice": 0
+      },
+      {
+        "label": 4,
+        "voxels": 1,
+        "overlap_voxels": 0,
+        "centroid_xyz": [
+          611.0,
+          412.0,
+          35.0
+        ],
+        "min_distance_to_gt_voxel": 236.75514777930383,
+        "z_min": 35,
+        "z_max": 35,
+        "voxels_on_selected_slice": 0
+      }
+    ],
+    "tail": {
+      "recomputed_hd95": 5.744562646538029,
+      "n_surface_points": 42710,
+      "n_tail_points": 2159,
+      "n_tail_points_on_selected_slice": 25,
+      "fraction_tail_on_selected_slice": 0.01157943492357573,
+      "max_surface_distance": 236.75514777930383,
+      "fraction_surface_farther_than_10_voxels": 0.018051978459377196,
+      "top_tail_z_slices": [
+        {
+          "z": 25,
+          "n_tail_points": 108
+        },
+        {
+          "z": 68,
+          "n_tail_points": 105
+        },
+        {
+          "z": 33,
+          "n_tail_points": 76
+        },
+        {
+          "z": 29,
+          "n_tail_points": 76
+        },
+        {
+          "z": 72,
+          "n_tail_points": 75
+        }
+      ]
+    },
+    "nrrd_space_units": null,
+    "foreground_rgb": [
+      0.9,
+      0.16,
+      0.12
+    ],
+    "foreground_alpha": 0.45,
+    "_row_caption": "Case ONP2RGD9L4VKKV4TFG56  |  Z slice 62  |  3D Dice: 91.35%  |  3D HD95: 5.74 voxel"
+  },
+  {
+    "role": "low_dice",
+    "case_id": "NDHTGYOM4FD148VWEWNZ",
+    "selection_stats": {
+      "test_median_dice": 0.9133274316214348,
+      "test_dice_p75": 0.9310819087251815
+    },
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "shape_xyz": [
+      576,
+      576,
+      88
+    ],
+    "prediction_path": "outputs/segmentation3d/test/predictions/NDHTGYOM4FD148VWEWNZ.npz",
+    "prediction_source": "saved_raw_prediction",
+    "slice_axis": "Z",
+    "slice_axis_index": 2,
+    "slice_index": 48,
+    "slice_rule": "max_fp_plus_fn_among_slices_with_gt_area_at_least_20_percent_of_max",
+    "dice": 0.8029042367988484,
+    "hd95": 221.431705000899,
+    "distance_unit": "voxel",
+    "window_vmin": 1.0,
+    "window_vmax": 53.0,
+    "slice_tp": 9645,
+    "slice_fp": 4975,
+    "slice_fn": 164,
+    "volume_tp": 363655,
+    "volume_fp": 168365,
+    "volume_fn": 10174,
+    "components": [
+      {
+        "label": 5,
+        "voxels": 391798,
+        "overlap_voxels": 363655,
+        "centroid_xyz": [
+          311.9000454315744,
+          304.2313896446638,
+          46.04536776604271
+        ],
+        "min_distance_to_gt_voxel": 0.0,
+        "z_min": 15,
+        "z_max": 81,
+        "voxels_on_selected_slice": 10029
+      },
+      {
+        "label": 2,
+        "voxels": 55202,
+        "overlap_voxels": 0,
+        "centroid_xyz": [
+          57.12693380674613,
+          300.4245860657223,
+          39.17271113365458
+        ],
+        "min_distance_to_gt_voxel": 138.51353724455961,
+        "z_min": 18,
+        "z_max": 60,
+        "voxels_on_selected_slice": 1799
+      },
+      {
+        "label": 7,
+        "voxels": 32356,
+        "overlap_voxels": 0,
+        "centroid_xyz": [
+          324.8257201137347,
+          234.1821300531586,
+          50.18654963530721
+        ],
+        "min_distance_to_gt_voxel": 6.708203932499369,
+        "z_min": 33,
+        "z_max": 67,
+        "voxels_on_selected_slice": 1523
+      },
+      {
+        "label": 6,
+        "voxels": 27434,
+        "overlap_voxels": 0,
+        "centroid_xyz": [
+          256.52358387402495,
+          188.49850550411898,
+          35.36013705620763
+        ],
+        "min_distance_to_gt_voxel": 57.532599454570104,
+        "z_min": 14,
+        "z_max": 61,
+        "voxels_on_selected_slice": 529
+      },
+      {
+        "label": 1,
+        "voxels": 13742,
+        "overlap_voxels": 0,
+        "centroid_xyz": [
+          25.60296900014554,
+          157.22136515791004,
+          32.68876437199825
+        ],
+        "min_distance_to_gt_voxel": 203.47235684485497,
+        "z_min": 19,
+        "z_max": 53,
+        "voxels_on_selected_slice": 52
+      },
+      {
+        "label": 8,
+        "voxels": 10812,
+        "overlap_voxels": 0,
+        "centroid_xyz": [
+          534.7643359230485,
+          97.41028486866445,
+          52.942008879023305
+        ],
+        "min_distance_to_gt_voxel": 208.55694665965936,
+        "z_min": 45,
+        "z_max": 62,
+        "voxels_on_selected_slice": 681
+      },
+      {
+        "label": 3,
+        "voxels": 534,
+        "overlap_voxels": 0,
+        "centroid_xyz": [
+          63.72659176029963,
+          169.8876404494382,
+          31.60674157303371
+        ],
+        "min_distance_to_gt_voxel": 180.02499826412998,
+        "z_min": 27,
+        "z_max": 35,
+        "voxels_on_selected_slice": 0
+      },
+      {
+        "label": 11,
+        "voxels": 136,
+        "overlap_voxels": 0,
+        "centroid_xyz": [
+          560.5808823529412,
+          98.86764705882354,
+          51.73529411764706
+        ],
+        "min_distance_to_gt_voxel": 243.52412611484718,
+        "z_min": 48,
+        "z_max": 56,
+        "voxels_on_selected_slice": 7
+      },
+      {
+        "label": 4,
+        "voxels": 2,
+        "overlap_voxels": 0,
+        "centroid_xyz": [
+          55.0,
+          159.5,
+          30.0
+        ],
+        "min_distance_to_gt_voxel": 200.72867259063912,
+        "z_min": 30,
+        "z_max": 30,
+        "voxels_on_selected_slice": 0
+      },
+      {
+        "label": 9,
+        "voxels": 2,
+        "overlap_voxels": 0,
+        "centroid_xyz": [
+          543.5,
+          96.0,
+          64.0
+        ],
+        "min_distance_to_gt_voxel": 234.97659457911973,
+        "z_min": 64,
+        "z_max": 64,
+        "voxels_on_selected_slice": 0
+      },
+      {
+        "label": 10,
+        "voxels": 2,
+        "overlap_voxels": 0,
+        "centroid_xyz": [
+          544.5,
+          98.0,
+          64.0
+        ],
+        "min_distance_to_gt_voxel": 234.29255216502295,
+        "z_min": 64,
+        "z_max": 64,
+        "voxels_on_selected_slice": 0
+      }
+    ],
+    "tail": {
+      "recomputed_hd95": 221.431705000899,
+      "n_surface_points": 85411,
+      "n_tail_points": 4271,
+      "n_tail_points_on_selected_slice": 121,
+      "fraction_tail_on_selected_slice": 0.028330601732615313,
+      "max_surface_distance": 250.2179050347916,
+      "fraction_surface_farther_than_10_voxels": 0.28223530926929785,
+      "top_tail_z_slices": [
+        {
+          "z": 46,
+          "n_tail_points": 230
+        },
+        {
+          "z": 42,
+          "n_tail_points": 214
+        },
+        {
+          "z": 62,
+          "n_tail_points": 165
+        },
+        {
+          "z": 45,
+          "n_tail_points": 162
+        },
+        {
+          "z": 41,
+          "n_tail_points": 148
+        }
+      ]
+    },
+    "nrrd_space_units": null,
+    "foreground_rgb": [
+      0.9,
+      0.16,
+      0.12
+    ],
+    "foreground_alpha": 0.45,
+    "_row_caption": "Case NDHTGYOM4FD148VWEWNZ  |  Z slice 48  |  3D Dice: 80.29%  |  3D HD95: 221.43 voxel"
+  },
+  {
+    "role": "high_hd95_decent_dice",
+    "case_id": "GCAGURFT38WSQCUVCBY0",
+    "selection_stats": {
+      "test_median_dice": 0.9133274316214348,
+      "test_dice_p75": 0.9310819087251815
+    },
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "shape_xyz": [
+      640,
+      640,
+      88
+    ],
+    "prediction_path": "outputs/segmentation3d/test/predictions/GCAGURFT38WSQCUVCBY0.npz",
+    "prediction_source": "saved_raw_prediction",
+    "slice_axis": "Z",
+    "slice_axis_index": 2,
+    "slice_index": 38,
+    "slice_rule": "max_fp_plus_fn_among_slices_with_gt_area_at_least_20_percent_of_max",
+    "dice": 0.9270833050794589,
+    "hd95": 19.949937343260004,
+    "distance_unit": "voxel",
+    "window_vmin": 1.0,
+    "window_vmax": 93.0,
+    "slice_tp": 4333,
+    "slice_fp": 403,
+    "slice_fn": 442,
+    "volume_tp": 170899,
+    "volume_fp": 12233,
+    "volume_fn": 14650,
+    "components": [
+      {
+        "label": 2,
+        "voxels": 175761,
+        "overlap_voxels": 170899,
+        "centroid_xyz": [
+          322.15242858199485,
+          321.1993616331268,
+          47.32069685538885
+        ],
+        "min_distance_to_gt_voxel": 0.0,
+        "z_min": 22,
+        "z_max": 77,
+        "voxels_on_selected_slice": 4367
+      },
+      {
+        "label": 1,
+        "voxels": 7371,
+        "overlap_voxels": 0,
+        "centroid_xyz": [
+          245.03011803011802,
+          262.636277302944,
+          41.692850359517024
+        ],
+        "min_distance_to_gt_voxel": 35.63705936241092,
+        "z_min": 29,
+        "z_max": 56,
+        "voxels_on_selected_slice": 369
+      }
+    ],
+    "tail": {
+      "recomputed_hd95": 19.949937343260004,
+      "n_surface_points": 39723,
+      "n_tail_points": 1988,
+      "n_tail_points_on_selected_slice": 72,
+      "fraction_tail_on_selected_slice": 0.03621730382293763,
+      "max_surface_distance": 70.78135347674555,
+      "fraction_surface_farther_than_10_voxels": 0.06381693225587191,
+      "top_tail_z_slices": [
+        {
+          "z": 44,
+          "n_tail_points": 111
+        },
+        {
+          "z": 42,
+          "n_tail_points": 100
+        },
+        {
+          "z": 45,
+          "n_tail_points": 96
+        },
+        {
+          "z": 46,
+          "n_tail_points": 90
+        },
+        {
+          "z": 35,
+          "n_tail_points": 86
+        }
+      ]
+    },
+    "nrrd_space_units": null,
+    "foreground_rgb": [
+      0.9,
+      0.16,
+      0.12
+    ],
+    "foreground_alpha": 0.45,
+    "_row_caption": "Case GCAGURFT38WSQCUVCBY0  |  Z slice 38  |  3D Dice: 92.71%  |  3D HD95: 19.95 voxel"
+  }
+]
