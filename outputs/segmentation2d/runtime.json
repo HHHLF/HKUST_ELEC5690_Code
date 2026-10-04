@@ -1,0 +1,9 @@
+{
+  "python": "3.10.21",
+  "platform": "Linux-6.8.0-136-generic-x86_64-with-glibc2.39",
+  "torch": "2.8.0+cu128",
+  "cuda_available": true,
+  "device": "cuda",
+  "gpu_count_visible": 1,
+  "gpu_name": "NVIDIA RTX 5880 Ada Generation"
+}

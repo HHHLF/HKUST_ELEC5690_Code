@@ -1,0 +1,98 @@
+# Problem 2(d). Independent of outputs/segmentation3d. Do not point output.dir at that run.
+seed: 42
+device: cuda
+
+reference_3d:
+  run_dir: outputs/segmentation3d
+  config_snapshot: outputs/segmentation3d/config_snapshot.json
+  split: outputs/segmentation3d/split.json
+  train_finished: outputs/segmentation3d/train_finished.json
+  test_summary: outputs/segmentation3d/test/summary.json
+  test_metrics: outputs/segmentation3d/test/per_case_metrics.json
+  predictions: outputs/segmentation3d/test/predictions
+  data_audit: outputs/segmentation3d/data_audit.json
+  problem2b_selection: outputs/segmentation3d/problem2b/case_selection.json
+  problem2b_metrics: outputs/segmentation3d/problem2b/selected_cases_metrics.json
+  history_csv: outputs/segmentation3d/history.csv
+
+# Copied from the 3D snapshot so VolumeStore opens the same cache and split.
+reference_3d_data:
+  patch_size: [112, 112, 80]
+  fg_sample_prob: 0.5
+  fg_center_jitter: [16, 16, 8]
+  patches_per_case_per_epoch: 8
+
+data:
+  root: /home/lheax/data/atriaseg2018
+  train_dirname: Training Set
+  test_dirname: Testing Set
+  image_name: lgemri.nrrd
+  label_name: laendo.nrrd
+  val_ratio: 0.2
+  split_seed: 42
+  cache_dir: /dev/shm/elec5690_la_seg3d
+  cache_workers: 8
+  # case_memory: load each normalized volume once from the 3D numpy cache.
+  cache_mode: case_memory
+  # Z is axis 2 of the (X, Y, Z) array. See src/la_seg2d/data.py.
+  z_axis: 2
+  # XY extent of the 3D patch. Not the 80-slice Z extent.
+  crop_size_xy: [112, 112]
+  fg_sample_prob: 0.5
+  fg_center_jitter_xy: [16, 16]
+
+augment:
+  flip_prob: 0.5
+  rot90_prob: 0.5
+  intensity_prob: 0.5
+  noise_std: 0.05
+  scale_min: 0.9
+  scale_max: 1.1
+
+model:
+  in_channels: 1
+  out_channels: 2
+  channels: [16, 32, 64, 128, 256]
+  norm: instance
+
+loss:
+  ce_weight: 1.0
+  dice_weight: 1.0
+  dice_smooth: 1.0
+
+train:
+  # 80 train cases * 8 crops, matching one 3D epoch of patch draws.
+  samples_per_epoch: 640
+  # 300 3D epochs * 40 optimizer steps. Same update count, not the same FLOPs.
+  max_steps: 12000
+  # 2D batches are smaller tensors than 112x112x80 patches.
+  batch_size: 64
+  grad_accum_steps: 1
+  optimizer: adamw
+  lr: 0.001
+  weight_decay: 0.0001
+  scheduler: cosine
+  eta_min: 0.000001
+  # 3D steps CosineAnnealingLR once per epoch, and one 3D epoch is 40 updates.
+  scheduler_every_steps: 40
+  scheduler_t_max: 300
+  amp: true
+  grad_clip: 1.0
+  # 3D validates every 10 epochs = 400 optimizer updates.
+  val_every_steps: 400
+  early_stopping_patience: 50
+  num_workers: 0
+
+infer:
+  # Slices larger than the 112 training crop use sliding windows. A full 576/640
+  # forward changes InstanceNorm statistics relative to those crops.
+  full_slice_max_side: 112
+  overlap: 0.5
+  sw_batch_size: 64
+  slice_batch_size: 16
+  gaussian_sigma_scale: 0.125
+  postprocess: none
+
+output:
+  dir: outputs/segmentation2d
+  comparison_dir: outputs/segmentation2d/comparison

@@ -1,0 +1,10 @@
+{
+  "seconds": 3160.8397092819214,
+  "best_val_dice": 0.7533920574161439,
+  "epochs_ran": 1200,
+  "optimizer_updates": 12000,
+  "batch_size": 64,
+  "samples_per_epoch": 640,
+  "samples_drawn": 768000,
+  "note": "optimizer_updates match the 3D count only as configured. They are not equal FLOPs."
+}

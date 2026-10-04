@@ -1,0 +1,207 @@
+{
+  "purpose": "Problem 2(d) 2D U-Net versus the finished Problem 2(a) 3D U-Net.",
+  "unknown_or_not_stored": [],
+  "distance_unit": {
+    "unit": "voxel",
+    "source": "NRRD space directions; no space units in the files",
+    "audit_note": "Every inspected header has space directions (1,0,0) (0,1,0) (0,0,1) and no space units. ASD and HD95 are reported in voxels. The challenge paper's 0.625 mm figure is not encoded in this copy and is not applied.",
+    "mm_not_used": true
+  },
+  "axis": {
+    "storage": "NRRD, not HDF5. data_audit.json reports h5_file_count = 0.",
+    "array_axes": "axis 0 = X, axis 1 = Y, axis 2 = Z",
+    "z_axis_index": 2,
+    "slice_plane": "image[:, :, z] is one axial slice of shape (X, Y)",
+    "why_not_last_dim_default": "Axis 2 is Z because the 3D loader keeps NRRD sizes in (X, Y, Z) order. The last axis is Z only as a consequence of that order."
+  },
+  "z_axis_index": 2,
+  "split": {
+    "source": "outputs/segmentation3d/split.json",
+    "seed": 42,
+    "val_ratio": 0.2,
+    "counts": {
+      "train": 80,
+      "val": 20,
+      "test": 54
+    },
+    "policy": "Official Training Set and Testing Set directories are kept. The validation set is a case-level holdout from the Training Set only. Patches from one case never cross splits. The test set is not used to choose checkpoints, hyperparameters, or preprocessing.",
+    "overlap": {
+      "train_val": [],
+      "train_test": [],
+      "val_test": [],
+      "has_overlap": false
+    },
+    "same_case_ids_required": true
+  },
+  "shared": {
+    "seed": 42,
+    "normalization": "per-case z-score of nonzero raw voxels; all-zero or zero-variance nonzero region -> zeros",
+    "resample": "none; geometry is the original voxel grid",
+    "loss": {
+      "ce_weight": 1.0,
+      "dice_weight": 1.0,
+      "dice_smooth": 1.0
+    },
+    "dice_reduction": "per-sample soft foreground Dice, then batch mean; CE is mean CrossEntropyLoss",
+    "optimizer": "adamw",
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "scheduler": "cosine",
+    "eta_min": 1e-06,
+    "scheduler_t_max_steps_of_scheduler": 300,
+    "amp": true,
+    "grad_clip": 1.0,
+    "checkpoint_rule": "strict improvement of mean full-volume validation Dice; test set is not used",
+    "postprocess": "none",
+    "metrics": "la_seg3d.metrics.binary_segmentation_metrics",
+    "surface_definition": "medpy-style 6-neighborhood erosion surface; ASD mean and HD95 of the concatenated directed distances",
+    "empty_mask_rule": "both empty -> dice/jaccard 1 and distances 0; one empty -> dice/jaccard 0 and distances inf",
+    "aggregation": "per-case metrics, then equal-weight mean; non-finite distances make the official mean inf"
+  },
+  "unet3d": {
+    "config_snapshot": "outputs/segmentation3d/config_snapshot.json",
+    "best_checkpoint": "outputs/segmentation3d/best.pt",
+    "channels": [
+      16,
+      32,
+      64,
+      128,
+      256
+    ],
+    "norm": "instance",
+    "parameters": 5646402,
+    "patch_size_xyz": [
+      112,
+      112,
+      80
+    ],
+    "fg_sample_prob": 0.5,
+    "fg_center_jitter_xyz": [
+      16,
+      16,
+      8
+    ],
+    "augment": {
+      "flip_prob": 0.5,
+      "rot90_prob": 0.5,
+      "intensity_prob": 0.5,
+      "noise_std": 0.05,
+      "scale_min": 0.9,
+      "scale_max": 1.1
+    },
+    "batch_size": 16,
+    "epochs_configured": 300,
+    "val_interval_epochs": 10,
+    "early_stopping_patience_validations": 50,
+    "infer": {
+      "overlap": 0.5,
+      "sw_batch_size": 16,
+      "gaussian_sigma_scale": 0.125,
+      "postprocess": "none"
+    },
+    "budget": {
+      "recorded_directly": false,
+      "source": "Computed from outputs/segmentation3d/config_snapshot.json, split.json counts, and train_finished.json epochs_ran. src/la_seg3d/engine.py uses drop_last=False and one optimizer step per grad_accum_steps batches, including a short last batch. history.csv has one row per epoch and no optimizer-step column.",
+      "n_train_cases": 80,
+      "patches_per_case_per_epoch": 8,
+      "batch_size": 16,
+      "grad_accum_steps": 1,
+      "samples_per_epoch": 640,
+      "batches_per_epoch": 40,
+      "optimizer_updates_per_epoch": 40,
+      "epochs_ran": 300,
+      "optimizer_updates": 12000,
+      "samples_drawn": 192000,
+      "best_checkpoint_epoch": 170,
+      "optimizer_updates_at_best_checkpoint": 6800,
+      "wall_seconds": 10189.754872083664,
+      "best_val_dice": 0.8887668807290389,
+      "early_stopping_triggered": false
+    },
+    "test_summary_file": "outputs/segmentation3d/test/summary.json",
+    "test_n_cases": 54,
+    "test_checkpoint_epoch": 170
+  },
+  "unet2d": {
+    "input": "[B,1,H,W] one axial slice; no neighbor stack",
+    "output": "[B,2,H,W]",
+    "channels": [
+      16,
+      32,
+      64,
+      128,
+      256
+    ],
+    "norm": "instance",
+    "parameters": 1942306,
+    "crop_size_xy": [
+      112,
+      112
+    ],
+    "crop_matches_3d_patch_xy": true,
+    "fg_sample_prob": 0.5,
+    "fg_center_jitter_xy": [
+      16,
+      16
+    ],
+    "background_slice_policy": "The non-foreground branch draws the Z index uniformly from all slices of the case, so pure-background slices stay in the training mixture. Validation and test predict every Z slice.",
+    "augment": {
+      "flip_prob": 0.5,
+      "rot90_prob": 0.5,
+      "intensity_prob": 0.5,
+      "noise_std": 0.05,
+      "scale_min": 0.9,
+      "scale_max": 1.1
+    },
+    "augment_difference": "In-plane flips and rot90 follow the 3D XY augmentation. Intensity scale and noise use the same probabilities and ranges. The 3D flip along Z is not applied, because one axial slice has no Z extent. No spatial rescaling.",
+    "batch_size": 64,
+    "samples_per_epoch": 640,
+    "max_steps": 12000,
+    "val_every_steps": 400,
+    "scheduler_every_steps": 40,
+    "epoch_meaning": "One 2D epoch draws samples_per_epoch crops. One 3D epoch draws n_train * patches_per_case_per_epoch patches. Equal epoch counts are not equal budgets.",
+    "infer": {
+      "full_slice_max_side": 112,
+      "overlap": 0.5,
+      "sw_batch_size": 64,
+      "slice_batch_size": 16,
+      "gaussian_sigma_scale": 0.125,
+      "postprocess": "none"
+    },
+    "cache": {
+      "mode": "case_memory",
+      "dir": "/dev/shm/elec5690_la_seg3d",
+      "note": "Reuses the 3D per-case numpy cache in memory. Training does not re-read NRRD each epoch."
+    }
+  },
+  "budget_alignment": {
+    "target": "2D max_steps equals the computed 3D optimizer update count",
+    "unet3d_optimizer_updates": 12000,
+    "unet2d_max_steps": 12000,
+    "matched": true,
+    "not_the_same_compute": "Matching optimizer updates does not match FLOPs. A 2D crop is one XY plane; a 3D patch is 112x112x80. Batch sizes also differ."
+  },
+  "visualization_cases": {
+    "source": "outputs/segmentation3d/problem2b/case_selection.json",
+    "slice_axis": "Z",
+    "cases": [
+      {
+        "role": "high_dice_low_hd95",
+        "case_id": "Y17SIT4UVACAM0WNBAWD"
+      },
+      {
+        "role": "median_dice",
+        "case_id": "ONP2RGD9L4VKKV4TFG56"
+      },
+      {
+        "role": "low_dice",
+        "case_id": "NDHTGYOM4FD148VWEWNZ"
+      },
+      {
+        "role": "high_hd95_decent_dice",
+        "case_id": "GCAGURFT38WSQCUVCBY0"
+      }
+    ],
+    "slice_indices_file": "outputs/segmentation3d/problem2b/selected_cases_metrics.json"
+  }
+}

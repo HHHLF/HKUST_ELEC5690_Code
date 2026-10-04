@@ -1,0 +1,108 @@
+{
+  "seed": 42,
+  "device": "cuda",
+  "reference_3d": {
+    "run_dir": "outputs/segmentation3d",
+    "config_snapshot": "outputs/segmentation3d/config_snapshot.json",
+    "split": "outputs/segmentation3d/split.json",
+    "train_finished": "outputs/segmentation3d/train_finished.json",
+    "test_summary": "outputs/segmentation3d/test/summary.json",
+    "test_metrics": "outputs/segmentation3d/test/per_case_metrics.json",
+    "predictions": "outputs/segmentation3d/test/predictions",
+    "data_audit": "outputs/segmentation3d/data_audit.json",
+    "problem2b_selection": "outputs/segmentation3d/problem2b/case_selection.json",
+    "problem2b_metrics": "outputs/segmentation3d/problem2b/selected_cases_metrics.json",
+    "history_csv": "outputs/segmentation3d/history.csv"
+  },
+  "reference_3d_data": {
+    "patch_size": [
+      112,
+      112,
+      80
+    ],
+    "fg_sample_prob": 0.5,
+    "fg_center_jitter": [
+      16,
+      16,
+      8
+    ],
+    "patches_per_case_per_epoch": 8
+  },
+  "data": {
+    "root": "/home/lheax/data/atriaseg2018",
+    "train_dirname": "Training Set",
+    "test_dirname": "Testing Set",
+    "image_name": "lgemri.nrrd",
+    "label_name": "laendo.nrrd",
+    "val_ratio": 0.2,
+    "split_seed": 42,
+    "cache_dir": "/dev/shm/elec5690_la_seg3d",
+    "cache_workers": 8,
+    "cache_mode": "case_memory",
+    "z_axis": 2,
+    "crop_size_xy": [
+      112,
+      112
+    ],
+    "fg_sample_prob": 0.5,
+    "fg_center_jitter_xy": [
+      16,
+      16
+    ]
+  },
+  "augment": {
+    "flip_prob": 0.5,
+    "rot90_prob": 0.5,
+    "intensity_prob": 0.5,
+    "noise_std": 0.05,
+    "scale_min": 0.9,
+    "scale_max": 1.1
+  },
+  "model": {
+    "in_channels": 1,
+    "out_channels": 2,
+    "channels": [
+      16,
+      32,
+      64,
+      128,
+      256
+    ],
+    "norm": "instance"
+  },
+  "loss": {
+    "ce_weight": 1.0,
+    "dice_weight": 1.0,
+    "dice_smooth": 1.0
+  },
+  "train": {
+    "samples_per_epoch": 640,
+    "max_steps": 12000,
+    "batch_size": 64,
+    "grad_accum_steps": 1,
+    "optimizer": "adamw",
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "scheduler": "cosine",
+    "eta_min": 1e-06,
+    "scheduler_every_steps": 40,
+    "scheduler_t_max": 300,
+    "amp": true,
+    "grad_clip": 1.0,
+    "val_every_steps": 400,
+    "early_stopping_patience": 50,
+    "num_workers": 0
+  },
+  "infer": {
+    "full_slice_max_side": 112,
+    "overlap": 0.5,
+    "sw_batch_size": 64,
+    "slice_batch_size": 16,
+    "gaussian_sigma_scale": 0.125,
+    "postprocess": "none"
+  },
+  "output": {
+    "dir": "outputs/segmentation2d",
+    "comparison_dir": "outputs/segmentation2d/comparison"
+  }
+}

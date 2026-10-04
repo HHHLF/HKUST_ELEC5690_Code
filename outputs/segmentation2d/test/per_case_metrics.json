@@ -1,0 +1,1568 @@
+[
+  {
+    "dice": 0.8749312340928037,
+    "jaccard": 0.7776691173070699,
+    "asd": 15.164046418244672,
+    "hd95": 85.35455291629727,
+    "pred_foreground_voxels": 419647,
+    "gt_foreground_voxels": 349266,
+    "empty_status": "none",
+    "case_id": "23G5K6IOGZGUOK7SJEUM",
+    "shape_xyz": [
+      640,
+      640,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "infer_mode": "sliding_window",
+    "n_slices": 88,
+    "n_windows": 10648,
+    "pad_after_xy": [
+      0,
+      0
+    ],
+    "z_axis": 2
+  },
+  {
+    "dice": 0.8878163049295926,
+    "jaccard": 0.7982640897045241,
+    "asd": 6.046770992213423,
+    "hd95": 33.83784863137726,
+    "pred_foreground_voxels": 423374,
+    "gt_foreground_voxels": 409920,
+    "empty_status": "none",
+    "case_id": "4URSJYI2QUH1T5S5PP47",
+    "shape_xyz": [
+      640,
+      640,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "infer_mode": "sliding_window",
+    "n_slices": 88,
+    "n_windows": 10648,
+    "pad_after_xy": [
+      0,
+      0
+    ],
+    "z_axis": 2
+  },
+  {
+    "dice": 0.833552837103431,
+    "jaccard": 0.7146083111330296,
+    "asd": 10.363973453405787,
+    "hd95": 58.87529143537676,
+    "pred_foreground_voxels": 390763,
+    "gt_foreground_voxels": 335876,
+    "empty_status": "none",
+    "case_id": "6HDYMTGBRI27MN763XTS",
+    "shape_xyz": [
+      640,
+      640,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "infer_mode": "sliding_window",
+    "n_slices": 88,
+    "n_windows": 10648,
+    "pad_after_xy": [
+      0,
+      0
+    ],
+    "z_axis": 2
+  },
+  {
+    "dice": 0.8298051171308499,
+    "jaccard": 0.7091170276666112,
+    "asd": 3.811717381876691,
+    "hd95": 19.949937343260004,
+    "pred_foreground_voxels": 205598,
+    "gt_foreground_voxels": 266737,
+    "empty_status": "none",
+    "case_id": "8E00BQQJ7T5TQSSGZVGE",
+    "shape_xyz": [
+      640,
+      640,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "infer_mode": "sliding_window",
+    "n_slices": 88,
+    "n_windows": 10648,
+    "pad_after_xy": [
+      0,
+      0
+    ],
+    "z_axis": 2
+  },
+  {
+    "dice": 0.8075160158910605,
+    "jaccard": 0.6771713722381446,
+    "asd": 17.228514215094936,
+    "hd95": 56.4003546088143,
+    "pred_foreground_voxels": 238176,
+    "gt_foreground_voxels": 174383,
+    "empty_status": "none",
+    "case_id": "8ISA3BO39HPSNJI0R8NH",
+    "shape_xyz": [
+      640,
+      640,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "infer_mode": "sliding_window",
+    "n_slices": 88,
+    "n_windows": 10648,
+    "pad_after_xy": [
+      0,
+      0
+    ],
+    "z_axis": 2
+  },
+  {
+    "dice": 0.7949557866452057,
+    "jaccard": 0.6596901406895943,
+    "asd": 18.72757919706985,
+    "hd95": 60.44832503882965,
+    "pred_foreground_voxels": 345076,
+    "gt_foreground_voxels": 256326,
+    "empty_status": "none",
+    "case_id": "8NPX269KV6D4KOELNP9K",
+    "shape_xyz": [
+      576,
+      576,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "infer_mode": "sliding_window",
+    "n_slices": 88,
+    "n_windows": 8800,
+    "pad_after_xy": [
+      0,
+      0
+    ],
+    "z_axis": 2
+  },
+  {
+    "dice": 0.8145881977547663,
+    "jaccard": 0.6871773979404393,
+    "asd": 9.22060658647366,
+    "hd95": 32.046840717924134,
+    "pred_foreground_voxels": 260225,
+    "gt_foreground_voxels": 203602,
+    "empty_status": "none",
+    "case_id": "9A18LTR49JLKPEZ7JNT5",
+    "shape_xyz": [
+      576,
+      576,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "infer_mode": "sliding_window",
+    "n_slices": 88,
+    "n_windows": 8800,
+    "pad_after_xy": [
+      0,
+      0
+    ],
+    "z_axis": 2
+  },
+  {
+    "dice": 0.8185852534196368,
+    "jaccard": 0.6928855897465763,
+    "asd": 11.041354184240129,
+    "hd95": 44.728625862747016,
+    "pred_foreground_voxels": 214841,
+    "gt_foreground_voxels": 163050,
+    "empty_status": "none",
+    "case_id": "A878KB79QDIBFOTWB0T8",
+    "shape_xyz": [
+      640,
+      640,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "infer_mode": "sliding_window",
+    "n_slices": 88,
+    "n_windows": 10648,
+    "pad_after_xy": [
+      0,
+      0
+    ],
+    "z_axis": 2
+  },
+  {
+    "dice": 0.78590587201419,
+    "jaccard": 0.6473187324594124,
+    "asd": 11.459296740971995,
+    "hd95": 51.58488150611572,
+    "pred_foreground_voxels": 207809,
+    "gt_foreground_voxels": 163154,
+    "empty_status": "none",
+    "case_id": "AY8LY0Z1KBIZ6LMDOAZO",
+    "shape_xyz": [
+      576,
+      576,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "infer_mode": "sliding_window",
+    "n_slices": 88,
+    "n_windows": 8800,
+    "pad_after_xy": [
+      0,
+      0
+    ],
+    "z_axis": 2
+  },
+  {
+    "dice": 0.8650354429603663,
+    "jaccard": 0.7621695652035755,
+    "asd": 7.1569271096849825,
+    "hd95": 29.444863728670914,
+    "pred_foreground_voxels": 300695,
+    "gt_foreground_voxels": 253858,
+    "empty_status": "none",
+    "case_id": "BFZ0ZTFDZRFG9MCSV1GX",
+    "shape_xyz": [
+      640,
+      640,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "infer_mode": "sliding_window",
+    "n_slices": 88,
+    "n_windows": 10648,
+    "pad_after_xy": [
+      0,
+      0
+    ],
+    "z_axis": 2
+  },
+  {
+    "dice": 0.6836281592780165,
+    "jaccard": 0.519327547224856,
+    "asd": 10.017546475069986,
+    "hd95": 41.7612260356422,
+    "pred_foreground_voxels": 210004,
+    "gt_foreground_voxels": 164963,
+    "empty_status": "none",
+    "case_id": "BP5NOS0LX7U5IXFES424",
+    "shape_xyz": [
+      576,
+      576,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "infer_mode": "sliding_window",
+    "n_slices": 88,
+    "n_windows": 8800,
+    "pad_after_xy": [
+      0,
+      0
+    ],
+    "z_axis": 2
+  },
+  {
+    "dice": 0.7591334997713607,
+    "jaccard": 0.6117769313874494,
+    "asd": 18.896634069517116,
+    "hd95": 94.18067742376883,
+    "pred_foreground_voxels": 195745,
+    "gt_foreground_voxels": 156338,
+    "empty_status": "none",
+    "case_id": "C26SF3UO4WM0Z4K04CIB",
+    "shape_xyz": [
+      576,
+      576,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "infer_mode": "sliding_window",
+    "n_slices": 88,
+    "n_windows": 8800,
+    "pad_after_xy": [
+      0,
+      0
+    ],
+    "z_axis": 2
+  },
+  {
+    "dice": 0.7785237524117432,
+    "jaccard": 0.6373629892099,
+    "asd": 34.23847107266092,
+    "hd95": 193.13363246816502,
+    "pred_foreground_voxels": 263986,
+    "gt_foreground_voxels": 196262,
+    "empty_status": "none",
+    "case_id": "D27523DQLTWE8UXKOPLP",
+    "shape_xyz": [
+      640,
+      640,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "infer_mode": "sliding_window",
+    "n_slices": 88,
+    "n_windows": 10648,
+    "pad_after_xy": [
+      0,
+      0
+    ],
+    "z_axis": 2
+  },
+  {
+    "dice": 0.8082556299345494,
+    "jaccard": 0.6782122494022439,
+    "asd": 13.39678704485261,
+    "hd95": 54.96362433464518,
+    "pred_foreground_voxels": 372736,
+    "gt_foreground_voxels": 311597,
+    "empty_status": "none",
+    "case_id": "DD3MZ7M8J7MVQ38NZWBZ",
+    "shape_xyz": [
+      576,
+      576,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "infer_mode": "sliding_window",
+    "n_slices": 88,
+    "n_windows": 8800,
+    "pad_after_xy": [
+      0,
+      0
+    ],
+    "z_axis": 2
+  },
+  {
+    "dice": 0.826600320485789,
+    "jaccard": 0.7044490764033637,
+    "asd": 8.522841173460932,
+    "hd95": 45.2658811910251,
+    "pred_foreground_voxels": 187253,
+    "gt_foreground_voxels": 168457,
+    "empty_status": "none",
+    "case_id": "DN9MLO9S6NWF7GYPC8ZD",
+    "shape_xyz": [
+      576,
+      576,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "infer_mode": "sliding_window",
+    "n_slices": 88,
+    "n_windows": 8800,
+    "pad_after_xy": [
+      0,
+      0
+    ],
+    "z_axis": 2
+  },
+  {
+    "dice": 0.8654276179025316,
+    "jaccard": 0.7627786746427121,
+    "asd": 17.712510425727068,
+    "hd95": 93.84295312371243,
+    "pred_foreground_voxels": 291561,
+    "gt_foreground_voxels": 242397,
+    "empty_status": "none",
+    "case_id": "DOCC2KQNQCEUHPZ9FAFF",
+    "shape_xyz": [
+      640,
+      640,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "infer_mode": "sliding_window",
+    "n_slices": 88,
+    "n_windows": 10648,
+    "pad_after_xy": [
+      0,
+      0
+    ],
+    "z_axis": 2
+  },
+  {
+    "dice": 0.7529059171357985,
+    "jaccard": 0.6037282411015849,
+    "asd": 23.22154412067696,
+    "hd95": 88.46468221838589,
+    "pred_foreground_voxels": 258204,
+    "gt_foreground_voxels": 186234,
+    "empty_status": "none",
+    "case_id": "EJ2SQFVAC1DLV39LYGPH",
+    "shape_xyz": [
+      640,
+      640,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "infer_mode": "sliding_window",
+    "n_slices": 88,
+    "n_windows": 10648,
+    "pad_after_xy": [
+      0,
+      0
+    ],
+    "z_axis": 2
+  },
+  {
+    "dice": 0.6923326756648674,
+    "jaccard": 0.5294409845538318,
+    "asd": 24.916235842209602,
+    "hd95": 80.64707013458309,
+    "pred_foreground_voxels": 287542,
+    "gt_foreground_voxels": 165067,
+    "empty_status": "none",
+    "case_id": "EMBIHZTK2UAOEFFJKR6U",
+    "shape_xyz": [
+      640,
+      640,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "infer_mode": "sliding_window",
+    "n_slices": 88,
+    "n_windows": 10648,
+    "pad_after_xy": [
+      0,
+      0
+    ],
+    "z_axis": 2
+  },
+  {
+    "dice": 0.7855879729001599,
+    "jaccard": 0.6468875104738852,
+    "asd": 18.161206879722812,
+    "hd95": 65.98484674529449,
+    "pred_foreground_voxels": 304027,
+    "gt_foreground_voxels": 262028,
+    "empty_status": "none",
+    "case_id": "EYFKUIESSPFWI4NEHS9L",
+    "shape_xyz": [
+      640,
+      640,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "infer_mode": "sliding_window",
+    "n_slices": 88,
+    "n_windows": 10648,
+    "pad_after_xy": [
+      0,
+      0
+    ],
+    "z_axis": 2
+  },
+  {
+    "dice": 0.7894515275439018,
+    "jaccard": 0.6521436733071687,
+    "asd": 14.998327013834952,
+    "hd95": 62.14981854871405,
+    "pred_foreground_voxels": 344901,
+    "gt_foreground_voxels": 253707,
+    "empty_status": "none",
+    "case_id": "FNGIIDQMPBSHC7X69OP1",
+    "shape_xyz": [
+      576,
+      576,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "infer_mode": "sliding_window",
+    "n_slices": 88,
+    "n_windows": 8800,
+    "pad_after_xy": [
+      0,
+      0
+    ],
+    "z_axis": 2
+  },
+  {
+    "dice": 0.7919469933370736,
+    "jaccard": 0.655556493770678,
+    "asd": 26.876605880575852,
+    "hd95": 136.7845020461017,
+    "pred_foreground_voxels": 245793,
+    "gt_foreground_voxels": 185549,
+    "empty_status": "none",
+    "case_id": "GCAGURFT38WSQCUVCBY0",
+    "shape_xyz": [
+      640,
+      640,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "infer_mode": "sliding_window",
+    "n_slices": 88,
+    "n_windows": 10648,
+    "pad_after_xy": [
+      0,
+      0
+    ],
+    "z_axis": 2
+  },
+  {
+    "dice": 0.7813552715473514,
+    "jaccard": 0.6411673995746592,
+    "asd": 15.807001153301782,
+    "hd95": 72.91090453423274,
+    "pred_foreground_voxels": 229656,
+    "gt_foreground_voxels": 157735,
+    "empty_status": "none",
+    "case_id": "GT8QWVDGJSPJ2HR7KHIV",
+    "shape_xyz": [
+      640,
+      640,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "infer_mode": "sliding_window",
+    "n_slices": 88,
+    "n_windows": 10648,
+    "pad_after_xy": [
+      0,
+      0
+    ],
+    "z_axis": 2
+  },
+  {
+    "dice": 0.7367881778206059,
+    "jaccard": 0.5832657396678255,
+    "asd": 17.266562093810233,
+    "hd95": 66.10597552415364,
+    "pred_foreground_voxels": 298059,
+    "gt_foreground_voxels": 193830,
+    "empty_status": "none",
+    "case_id": "HQTRB9LB3EVSJPJZDGGN",
+    "shape_xyz": [
+      640,
+      640,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "infer_mode": "sliding_window",
+    "n_slices": 88,
+    "n_windows": 10648,
+    "pad_after_xy": [
+      0,
+      0
+    ],
+    "z_axis": 2
+  },
+  {
+    "dice": 0.6605606684847448,
+    "jaccard": 0.4931620663531497,
+    "asd": 29.64705911800029,
+    "hd95": 110.11448563750409,
+    "pred_foreground_voxels": 520779,
+    "gt_foreground_voxels": 314902,
+    "empty_status": "none",
+    "case_id": "JBDRUBWZBRLRDYIE4W7Q",
+    "shape_xyz": [
+      576,
+      576,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "infer_mode": "sliding_window",
+    "n_slices": 88,
+    "n_windows": 8800,
+    "pad_after_xy": [
+      0,
+      0
+    ],
+    "z_axis": 2
+  },
+  {
+    "dice": 0.8653402929103532,
+    "jaccard": 0.7626430087395222,
+    "asd": 7.634114922734293,
+    "hd95": 31.160872901765767,
+    "pred_foreground_voxels": 267157,
+    "gt_foreground_voxels": 226168,
+    "empty_status": "none",
+    "case_id": "JG24TOFCDWAFMJ5O807R",
+    "shape_xyz": [
+      576,
+      576,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "infer_mode": "sliding_window",
+    "n_slices": 88,
+    "n_windows": 8800,
+    "pad_after_xy": [
+      0,
+      0
+    ],
+    "z_axis": 2
+  },
+  {
+    "dice": 0.8271137745092784,
+    "jaccard": 0.7051952325241299,
+    "asd": 12.67113922880808,
+    "hd95": 53.823786563191554,
+    "pred_foreground_voxels": 261948,
+    "gt_foreground_voxels": 204457,
+    "empty_status": "none",
+    "case_id": "LCEN6QGISJXG5JUUAS03",
+    "shape_xyz": [
+      576,
+      576,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "infer_mode": "sliding_window",
+    "n_slices": 88,
+    "n_windows": 8800,
+    "pad_after_xy": [
+      0,
+      0
+    ],
+    "z_axis": 2
+  },
+  {
+    "dice": 0.7896657059896592,
+    "jaccard": 0.6524360334971328,
+    "asd": 23.181616725241316,
+    "hd95": 124.53513560437472,
+    "pred_foreground_voxels": 217332,
+    "gt_foreground_voxels": 153240,
+    "empty_status": "none",
+    "case_id": "M2YZZ592ETSE09NBC233",
+    "shape_xyz": [
+      640,
+      640,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "infer_mode": "sliding_window",
+    "n_slices": 88,
+    "n_windows": 10648,
+    "pad_after_xy": [
+      0,
+      0
+    ],
+    "z_axis": 2
+  },
+  {
+    "dice": 0.6508128775390902,
+    "jaccard": 0.4823740656166442,
+    "asd": 18.094707351895995,
+    "hd95": 69.05794668247819,
+    "pred_foreground_voxels": 232996,
+    "gt_foreground_voxels": 146766,
+    "empty_status": "none",
+    "case_id": "MKVZDR7UDH5HES9U96GW",
+    "shape_xyz": [
+      640,
+      640,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "infer_mode": "sliding_window",
+    "n_slices": 88,
+    "n_windows": 10648,
+    "pad_after_xy": [
+      0,
+      0
+    ],
+    "z_axis": 2
+  },
+  {
+    "dice": 0.663923811125594,
+    "jaccard": 0.4969206222325725,
+    "asd": 22.022855453552506,
+    "hd95": 78.65112840894274,
+    "pred_foreground_voxels": 302275,
+    "gt_foreground_voxels": 173385,
+    "empty_status": "none",
+    "case_id": "MMLTFB33BGQJ7ONEI0VF",
+    "shape_xyz": [
+      576,
+      576,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "infer_mode": "sliding_window",
+    "n_slices": 88,
+    "n_windows": 8800,
+    "pad_after_xy": [
+      0,
+      0
+    ],
+    "z_axis": 2
+  },
+  {
+    "dice": 0.7596837425899956,
+    "jaccard": 0.6124919656994152,
+    "asd": 21.64254986732048,
+    "hd95": 72.26340706055866,
+    "pred_foreground_voxels": 246317,
+    "gt_foreground_voxels": 165120,
+    "empty_status": "none",
+    "case_id": "MS11OZHE0BROK9VKMOEV",
+    "shape_xyz": [
+      640,
+      640,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "infer_mode": "sliding_window",
+    "n_slices": 88,
+    "n_windows": 10648,
+    "pad_after_xy": [
+      0,
+      0
+    ],
+    "z_axis": 2
+  },
+  {
+    "dice": 0.847839318320146,
+    "jaccard": 0.7358689910195457,
+    "asd": 17.0286006745493,
+    "hd95": 81.05985421513019,
+    "pred_foreground_voxels": 433320,
+    "gt_foreground_voxels": 332318,
+    "empty_status": "none",
+    "case_id": "MY6ABW1UA1MR8MDHANWE",
+    "shape_xyz": [
+      640,
+      640,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "infer_mode": "sliding_window",
+    "n_slices": 88,
+    "n_windows": 10648,
+    "pad_after_xy": [
+      0,
+      0
+    ],
+    "z_axis": 2
+  },
+  {
+    "dice": 0.7999951238763964,
+    "jaccard": 0.6666598943002918,
+    "asd": 19.966443523821948,
+    "hd95": 65.78297615240224,
+    "pred_foreground_voxels": 368616,
+    "gt_foreground_voxels": 287643,
+    "empty_status": "none",
+    "case_id": "N4NGBBT16Q282UZV4N8T",
+    "shape_xyz": [
+      576,
+      576,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "infer_mode": "sliding_window",
+    "n_slices": 88,
+    "n_windows": 8800,
+    "pad_after_xy": [
+      0,
+      0
+    ],
+    "z_axis": 2
+  },
+  {
+    "dice": 0.7174626406362856,
+    "jaccard": 0.559408765287141,
+    "asd": 60.32775021768374,
+    "hd95": 213.3476036873187,
+    "pred_foreground_voxels": 571784,
+    "gt_foreground_voxels": 373829,
+    "empty_status": "none",
+    "case_id": "NDHTGYOM4FD148VWEWNZ",
+    "shape_xyz": [
+      576,
+      576,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "infer_mode": "sliding_window",
+    "n_slices": 88,
+    "n_windows": 8800,
+    "pad_after_xy": [
+      0,
+      0
+    ],
+    "z_axis": 2
+  },
+  {
+    "dice": 0.8597569746100605,
+    "jaccard": 0.7540120443324276,
+    "asd": 10.869743988522272,
+    "hd95": 67.14908785679818,
+    "pred_foreground_voxels": 366103,
+    "gt_foreground_voxels": 329133,
+    "empty_status": "none",
+    "case_id": "O2ZVEXE0D3QYA5B45XLH",
+    "shape_xyz": [
+      640,
+      640,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "infer_mode": "sliding_window",
+    "n_slices": 88,
+    "n_windows": 10648,
+    "pad_after_xy": [
+      0,
+      0
+    ],
+    "z_axis": 2
+  },
+  {
+    "dice": 0.8935297457995123,
+    "jaccard": 0.8075497216553357,
+    "asd": 5.5692116261825415,
+    "hd95": 27.386127875258307,
+    "pred_foreground_voxels": 241595,
+    "gt_foreground_voxels": 207460,
+    "empty_status": "none",
+    "case_id": "OKKIVTFXQIUPULV7MA6M",
+    "shape_xyz": [
+      576,
+      576,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "infer_mode": "sliding_window",
+    "n_slices": 88,
+    "n_windows": 8800,
+    "pad_after_xy": [
+      0,
+      0
+    ],
+    "z_axis": 2
+  },
+  {
+    "dice": 0.7748269705844323,
+    "jaccard": 0.6324224839931714,
+    "asd": 16.31219891704807,
+    "hd95": 63.20680333724463,
+    "pred_foreground_voxels": 250894,
+    "gt_foreground_voxels": 189927,
+    "empty_status": "none",
+    "case_id": "ONP2RGD9L4VKKV4TFG56",
+    "shape_xyz": [
+      640,
+      640,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "infer_mode": "sliding_window",
+    "n_slices": 88,
+    "n_windows": 10648,
+    "pad_after_xy": [
+      0,
+      0
+    ],
+    "z_axis": 2
+  },
+  {
+    "dice": 0.8637456446204463,
+    "jaccard": 0.7601692706664445,
+    "asd": 9.819813025906313,
+    "hd95": 55.452682532047085,
+    "pred_foreground_voxels": 441082,
+    "gt_foreground_voxels": 382899,
+    "empty_status": "none",
+    "case_id": "P1S3QI5UZLB08BQ9O36Z",
+    "shape_xyz": [
+      576,
+      576,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "infer_mode": "sliding_window",
+    "n_slices": 88,
+    "n_windows": 8800,
+    "pad_after_xy": [
+      0,
+      0
+    ],
+    "z_axis": 2
+  },
+  {
+    "dice": 0.6748787680333733,
+    "jaccard": 0.5092958679952464,
+    "asd": 40.422455163817276,
+    "hd95": 187.83396922672148,
+    "pred_foreground_voxels": 319268,
+    "gt_foreground_voxels": 209058,
+    "empty_status": "none",
+    "case_id": "PFORURSOR4MDVNQ6QFCZ",
+    "shape_xyz": [
+      576,
+      576,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "infer_mode": "sliding_window",
+    "n_slices": 88,
+    "n_windows": 8800,
+    "pad_after_xy": [
+      0,
+      0
+    ],
+    "z_axis": 2
+  },
+  {
+    "dice": 0.8662352292610436,
+    "jaccard": 0.7640343496441996,
+    "asd": 17.025184627115795,
+    "hd95": 104.7807234180028,
+    "pred_foreground_voxels": 442503,
+    "gt_foreground_voxels": 391917,
+    "empty_status": "none",
+    "case_id": "PVXH7YVTMKJ8TU7EQXYR",
+    "shape_xyz": [
+      640,
+      640,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "infer_mode": "sliding_window",
+    "n_slices": 88,
+    "n_windows": 10648,
+    "pad_after_xy": [
+      0,
+      0
+    ],
+    "z_axis": 2
+  },
+  {
+    "dice": 0.7328617946938558,
+    "jaccard": 0.5783597966070277,
+    "asd": 19.246183934140962,
+    "hd95": 68.8040696470783,
+    "pred_foreground_voxels": 213901,
+    "gt_foreground_voxels": 160759,
+    "empty_status": "none",
+    "case_id": "S9HMB3CY6737UDPG6TN2",
+    "shape_xyz": [
+      576,
+      576,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "infer_mode": "sliding_window",
+    "n_slices": 88,
+    "n_windows": 8800,
+    "pad_after_xy": [
+      0,
+      0
+    ],
+    "z_axis": 2
+  },
+  {
+    "dice": 0.7668095114875426,
+    "jaccard": 0.6218094597960374,
+    "asd": 13.342358483666759,
+    "hd95": 54.29548784199291,
+    "pred_foreground_voxels": 265716,
+    "gt_foreground_voxels": 209625,
+    "empty_status": "none",
+    "case_id": "SXKQQ96IEXC5VZOFAYFN",
+    "shape_xyz": [
+      576,
+      576,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "infer_mode": "sliding_window",
+    "n_slices": 88,
+    "n_windows": 8800,
+    "pad_after_xy": [
+      0,
+      0
+    ],
+    "z_axis": 2
+  },
+  {
+    "dice": 0.6912500208903175,
+    "jaccard": 0.528175764602924,
+    "asd": 20.505387071927935,
+    "hd95": 86.99224061036854,
+    "pred_foreground_voxels": 453938,
+    "gt_foreground_voxels": 443607,
+    "empty_status": "none",
+    "case_id": "TUU018TS5KUK40V4DRXT",
+    "shape_xyz": [
+      640,
+      640,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "infer_mode": "sliding_window",
+    "n_slices": 88,
+    "n_windows": 10648,
+    "pad_after_xy": [
+      0,
+      0
+    ],
+    "z_axis": 2
+  },
+  {
+    "dice": 0.80403978472648,
+    "jaccard": 0.6722964313178206,
+    "asd": 17.142949944106615,
+    "hd95": 77.8793938946967,
+    "pred_foreground_voxels": 226884,
+    "gt_foreground_voxels": 184128,
+    "empty_status": "none",
+    "case_id": "UOTC6ZI12583GTMLHKAL",
+    "shape_xyz": [
+      576,
+      576,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "infer_mode": "sliding_window",
+    "n_slices": 88,
+    "n_windows": 8800,
+    "pad_after_xy": [
+      0,
+      0
+    ],
+    "z_axis": 2
+  },
+  {
+    "dice": 0.6708686786756339,
+    "jaccard": 0.5047422086232762,
+    "asd": 38.80372355764357,
+    "hd95": 166.6247279660012,
+    "pred_foreground_voxels": 339803,
+    "gt_foreground_voxels": 192799,
+    "empty_status": "none",
+    "case_id": "WFHG191DWLD2L8BD7CX6",
+    "shape_xyz": [
+      576,
+      576,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "infer_mode": "sliding_window",
+    "n_slices": 88,
+    "n_windows": 8800,
+    "pad_after_xy": [
+      0,
+      0
+    ],
+    "z_axis": 2
+  },
+  {
+    "dice": 0.7897323611096664,
+    "jaccard": 0.6525270409062195,
+    "asd": 7.0514320712624,
+    "hd95": 36.4417343165772,
+    "pred_foreground_voxels": 189045,
+    "gt_foreground_voxels": 195503,
+    "empty_status": "none",
+    "case_id": "WOUSH4GFU19S1UW1TZL1",
+    "shape_xyz": [
+      640,
+      640,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "infer_mode": "sliding_window",
+    "n_slices": 88,
+    "n_windows": 10648,
+    "pad_after_xy": [
+      0,
+      0
+    ],
+    "z_axis": 2
+  },
+  {
+    "dice": 0.8064276960433951,
+    "jaccard": 0.6756420984050537,
+    "asd": 10.792647890997694,
+    "hd95": 44.654227123532216,
+    "pred_foreground_voxels": 305823,
+    "gt_foreground_voxels": 218844,
+    "empty_status": "none",
+    "case_id": "WP01DLGNFGO38E0YVLSW",
+    "shape_xyz": [
+      640,
+      640,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "infer_mode": "sliding_window",
+    "n_slices": 88,
+    "n_windows": 10648,
+    "pad_after_xy": [
+      0,
+      0
+    ],
+    "z_axis": 2
+  },
+  {
+    "dice": 0.8445020499413424,
+    "jaccard": 0.7308555154931017,
+    "asd": 28.424169414688745,
+    "hd95": 152.28804935025835,
+    "pred_foreground_voxels": 228081,
+    "gt_foreground_voxels": 178516,
+    "empty_status": "none",
+    "case_id": "X6X4WSG5012HCI1CRMX3",
+    "shape_xyz": [
+      640,
+      640,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "infer_mode": "sliding_window",
+    "n_slices": 88,
+    "n_windows": 10648,
+    "pad_after_xy": [
+      0,
+      0
+    ],
+    "z_axis": 2
+  },
+  {
+    "dice": 0.8612315340844064,
+    "jaccard": 0.7562832655292737,
+    "asd": 12.985357525280246,
+    "hd95": 56.00892785976178,
+    "pred_foreground_voxels": 242933,
+    "gt_foreground_voxels": 193953,
+    "empty_status": "none",
+    "case_id": "X730E6GWUSAFPYEAH15H",
+    "shape_xyz": [
+      576,
+      576,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "infer_mode": "sliding_window",
+    "n_slices": 88,
+    "n_windows": 8800,
+    "pad_after_xy": [
+      0,
+      0
+    ],
+    "z_axis": 2
+  },
+  {
+    "dice": 0.843443582047295,
+    "jaccard": 0.7292714552916741,
+    "asd": 12.843579872471187,
+    "hd95": 55.80322571321482,
+    "pred_foreground_voxels": 249209,
+    "gt_foreground_voxels": 202890,
+    "empty_status": "none",
+    "case_id": "X8T5SI3H0DZO6R9NQ9G3",
+    "shape_xyz": [
+      640,
+      640,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "infer_mode": "sliding_window",
+    "n_slices": 88,
+    "n_windows": 10648,
+    "pad_after_xy": [
+      0,
+      0
+    ],
+    "z_axis": 2
+  },
+  {
+    "dice": 0.8609776780338839,
+    "jaccard": 0.7558918393694979,
+    "asd": 17.83142792547819,
+    "hd95": 75.18510486075998,
+    "pred_foreground_voxels": 428597,
+    "gt_foreground_voxels": 352069,
+    "empty_status": "none",
+    "case_id": "XN0S3BIZP80EK5U2LXV5",
+    "shape_xyz": [
+      640,
+      640,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "infer_mode": "sliding_window",
+    "n_slices": 88,
+    "n_windows": 10648,
+    "pad_after_xy": [
+      0,
+      0
+    ],
+    "z_axis": 2
+  },
+  {
+    "dice": 0.8018330787390641,
+    "jaccard": 0.6692165044042652,
+    "asd": 13.549826040905899,
+    "hd95": 56.234331003393336,
+    "pred_foreground_voxels": 182286,
+    "gt_foreground_voxels": 134558,
+    "empty_status": "none",
+    "case_id": "Y17SIT4UVACAM0WNBAWD",
+    "shape_xyz": [
+      640,
+      640,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "infer_mode": "sliding_window",
+    "n_slices": 88,
+    "n_windows": 10648,
+    "pad_after_xy": [
+      0,
+      0
+    ],
+    "z_axis": 2
+  },
+  {
+    "dice": 0.8026971323666607,
+    "jaccard": 0.6704211223959733,
+    "asd": 20.992882512594754,
+    "hd95": 135.13992735294175,
+    "pred_foreground_voxels": 247903,
+    "gt_foreground_voxels": 218370,
+    "empty_status": "none",
+    "case_id": "YM0P648I12HKMF5QY4JO",
+    "shape_xyz": [
+      640,
+      640,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "infer_mode": "sliding_window",
+    "n_slices": 88,
+    "n_windows": 10648,
+    "pad_after_xy": [
+      0,
+      0
+    ],
+    "z_axis": 2
+  },
+  {
+    "dice": 0.7023592782793214,
+    "jaccard": 0.5412586600611526,
+    "asd": 27.87772775404745,
+    "hd95": 111.02522228288579,
+    "pred_foreground_voxels": 337381,
+    "gt_foreground_voxels": 220120,
+    "empty_status": "none",
+    "case_id": "Z4WM2IZVVFPI4NNY9UKZ",
+    "shape_xyz": [
+      640,
+      640,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "infer_mode": "sliding_window",
+    "n_slices": 88,
+    "n_windows": 10648,
+    "pad_after_xy": [
+      0,
+      0
+    ],
+    "z_axis": 2
+  },
+  {
+    "dice": 0.8059061931362693,
+    "jaccard": 0.6749102863643266,
+    "asd": 18.92877077134347,
+    "hd95": 79.7057087039567,
+    "pred_foreground_voxels": 355943,
+    "gt_foreground_voxels": 272753,
+    "empty_status": "none",
+    "case_id": "ZQR579BFRMYBFFBX3Q5M",
+    "shape_xyz": [
+      640,
+      640,
+      88
+    ],
+    "spacing_xyz": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "distance_unit": "voxel",
+    "infer_mode": "sliding_window",
+    "n_slices": 88,
+    "n_windows": 10648,
+    "pad_after_xy": [
+      0,
+      0
+    ],
+    "z_axis": 2
+  }
+]

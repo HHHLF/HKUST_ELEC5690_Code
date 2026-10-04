@@ -1,0 +1,44 @@
+{
+  "n_cases": 54,
+  "distance_mean_policy": "Metrics are computed per case, then averaged with equal case weight. Voxels are not pooled across cases. Non-finite ASD/HD95 stay in the set; the official mean is inf when any case is non-finite. finite_mean excludes those cases and is only a diagnostic.",
+  "std_policy": "sample standard deviation (ddof=1) over finite values when at least two exist",
+  "n_both_empty": 0,
+  "n_pred_empty": 0,
+  "n_gt_empty": 0,
+  "n_failed_cases": 0,
+  "dice": {
+    "mean": 0.7900915044596518,
+    "std": 0.06481846563317617,
+    "n_nonfinite": 0,
+    "finite_mean": 0.7900915044596518
+  },
+  "jaccard": {
+    "mean": 0.6575643460654282,
+    "std": 0.08660758525233843,
+    "n_nonfinite": 0,
+    "finite_mean": 0.6575643460654282
+  },
+  "asd": {
+    "mean": 17.90383201347135,
+    "std": 9.838498845268962,
+    "n_nonfinite": 0,
+    "finite_mean": 17.90383201347135
+  },
+  "hd95": {
+    "mean": 78.36215344083327,
+    "std": 42.80498472089393,
+    "n_nonfinite": 0,
+    "finite_mean": 78.36215344083327
+  },
+  "mean_dice": 0.7900915044596518,
+  "mean_dice_exceeds_0.70": true,
+  "split": "test",
+  "checkpoint": "/home/lheax/data/HKUST_elec5690_programming/outputs/segmentation2d/best.pt",
+  "checkpoint_epoch": 1120,
+  "checkpoint_step": 11200,
+  "best_val_dice_recorded_in_checkpoint": 0.7533920574161439,
+  "postprocess": "none",
+  "distance_unit": "voxel",
+  "spacing_source": "NRRD space directions; no space units in the files",
+  "metrics_implementation": "la_seg3d.metrics.binary_segmentation_metrics"
+}

@@ -1,0 +1,72 @@
+{
+  "cases": [
+    {
+      "case_id": "Y17SIT4UVACAM0WNBAWD",
+      "slice_axis": "Z",
+      "slice_axis_index": 2,
+      "slice_index": 71,
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "label_equal": true,
+      "mri_equal": true,
+      "displayed_shape_xy": [
+        640,
+        640
+      ]
+    },
+    {
+      "case_id": "ONP2RGD9L4VKKV4TFG56",
+      "slice_axis": "Z",
+      "slice_axis_index": 2,
+      "slice_index": 62,
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "label_equal": true,
+      "mri_equal": true,
+      "displayed_shape_xy": [
+        640,
+        640
+      ]
+    },
+    {
+      "case_id": "NDHTGYOM4FD148VWEWNZ",
+      "slice_axis": "Z",
+      "slice_axis_index": 2,
+      "slice_index": 48,
+      "shape_xyz": [
+        576,
+        576,
+        88
+      ],
+      "label_equal": true,
+      "mri_equal": true,
+      "displayed_shape_xy": [
+        576,
+        576
+      ]
+    },
+    {
+      "case_id": "GCAGURFT38WSQCUVCBY0",
+      "slice_axis": "Z",
+      "slice_axis_index": 2,
+      "slice_index": 38,
+      "shape_xyz": [
+        640,
+        640,
+        88
+      ],
+      "label_equal": true,
+      "mri_equal": true,
+      "displayed_shape_xy": [
+        640,
+        640
+      ]
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "distance_unit": "voxel",
+  "metrics": [
+    {
+      "metric": "dice",
+      "mean_2d": 0.7900915044596518,
+      "std_2d": 0.06481846563317617,
+      "mean_3d": 0.9078676556184031,
+      "std_3d": 0.02873599529869001,
+      "delta": -0.11777615115875129,
+      "unit": "1",
+      "n_cases": 54,
+      "n_nonfinite_2d": 0,
+      "n_nonfinite_3d": 0,
+      "delta_percentage_points": -11.777615115875129
+    },
+    {
+      "metric": "jaccard",
+      "mean_2d": 0.6575643460654282,
+      "std_2d": 0.08660758525233843,
+      "mean_3d": 0.8324862775973663,
+      "std_3d": 0.04674899375584414,
+      "delta": -0.17492193153193802,
+      "unit": "1",
+      "n_cases": 54,
+      "n_nonfinite_2d": 0,
+      "n_nonfinite_3d": 0,
+      "delta_percentage_points": -17.492193153193803
+    },
+    {
+      "metric": "asd",
+      "mean_2d": 17.90383201347135,
+      "std_2d": 9.838498845268962,
+      "mean_3d": 3.8749362686370055,
+      "std_3d": 5.837036758759535,
+      "delta": 14.028895744834346,
+      "unit": "voxel",
+      "n_cases": 54,
+      "n_nonfinite_2d": 0,
+      "n_nonfinite_3d": 0,
+      "delta_percentage_points": ""
+    },
+    {
+      "metric": "hd95",
+      "mean_2d": 78.36215344083327,
+      "std_2d": 42.80498472089393,
+      "mean_3d": 17.88978180800236,
+      "std_3d": 37.91681731639828,
+      "delta": 60.47237163283091,
+      "unit": "voxel",
+      "n_cases": 54,
+      "n_nonfinite_2d": 0,
+      "n_nonfinite_3d": 0,
+      "delta_percentage_points": ""
+    }
+  ]
+}
