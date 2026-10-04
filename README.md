@@ -1,4 +1,4 @@
-# ELEC5690
+# ELEC5690 -- Skin Lesion Image Classification + 3D Medical Image Segmentation
 
 ## Environment
 
