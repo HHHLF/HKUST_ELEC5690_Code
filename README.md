@@ -2,15 +2,29 @@
 
 ## Environment
 
-Use the server conda environment `prism` (PyTorch 2.8). Do not reinstall torch into it.
+Python 3.10 and an NVIDIA GPU. PyTorch must be a CUDA build; a CPU wheel will not train these models.
 
 ```bash
-source /home/lheax/miniconda3/etc/profile.d/conda.sh
-conda activate prism
+conda create -n elec5690 python=3.10 -y
+conda activate elec5690
+pip install torch==2.8.0 torchvision==0.23.0 --index-url https://download.pytorch.org/whl/cu128
+pip install "numpy>=1.24" "pandas>=2.0" "scikit-learn>=1.3" "matplotlib>=3.7" "pillow>=10.0" "pyyaml>=6.0" "scipy>=1.11" "nibabel>=5.0"
 cd /home/lheax/data/HKUST_elec5690_programming
 ```
 
-For a new environment, install a CUDA build of PyTorch for this machine, then `pip install -r requirements.txt`.
+`cu128` matches this machine (CUDA 12.8). On another GPU, pick the wheel from [pytorch.org](https://pytorch.org/get-started/locally/). Do not install `torch` from the default PyPI index after that; it can replace the CUDA build.
+
+| Package | Used for |
+|---|---|
+| torch, torchvision | training, DINOv2, 2D/3D U-Net |
+| numpy, pillow | images and volumes |
+| pandas, scikit-learn | Problem 1 metrics and tables |
+| matplotlib | figures |
+| pyyaml | configs |
+| scipy | surface distance (ASD, HD95) |
+| nibabel | NIfTI export |
+
+Problem 1 also needs the backbone file `weights/dinov2_vitb14_pretrain.pth`.
 
 ## Problem 1
 
