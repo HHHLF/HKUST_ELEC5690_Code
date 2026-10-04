@@ -1,5 +1,11 @@
 # ELEC5690 -- Skin Lesion Image Classification + 3D Medical Image Segmentation
 
+Two course experiments.
+
+Problem 1 fine-tunes a DINOv2 ViT-B/14 on ISIC 2018 Task 3 for 7-class skin-lesion classification. The same model is trained with cross-entropy, class-weighted cross-entropy, and focal loss, then compared on the test set.
+
+Problem 2 segments the left-atrium cavity on the AtriaSeg 2018 MRI dataset. A 3D U-Net and a 2D U-Net are trained with cross-entropy plus soft Dice. Both are scored on full volumes with Dice, Jaccard, ASD, and HD95, and the test results are compared.
+
 ## Environment
 
 Python 3.10 and an NVIDIA GPU. PyTorch must be a CUDA build; a CPU wheel will not train these models.
