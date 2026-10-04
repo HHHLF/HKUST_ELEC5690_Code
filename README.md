@@ -9,7 +9,7 @@ conda create -n elec5690 python=3.10 -y
 conda activate elec5690
 pip install torch==2.8.0 torchvision==0.23.0 --index-url https://download.pytorch.org/whl/cu128
 pip install "numpy>=1.24" "pandas>=2.0" "scikit-learn>=1.3" "matplotlib>=3.7" "pillow>=10.0" "pyyaml>=6.0" "scipy>=1.11" "nibabel>=5.0"
-cd /home/lheax/data/HKUST_elec5690_programming
+cd /data/HKUST_elec5690_programming
 ```
 
 `cu128` matches this machine (CUDA 12.8). On another GPU, pick the wheel from [pytorch.org](https://pytorch.org/get-started/locally/). Do not install `torch` from the default PyPI index after that; it can replace the CUDA build.
